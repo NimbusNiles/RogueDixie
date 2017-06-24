@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour {
         myRigidBody.velocity = moveDirection * moveSpeed;
 
         // Attack
-        if (Input.GetMouseButtonDown(0)) {
+        if (Input.GetMouseButton(0) && myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle")) {
             Vector2 mousePosition = myCamera.ScreenToWorldPoint(Input.mousePosition);
 
             // Set position
@@ -35,7 +35,8 @@ public class PlayerController : MonoBehaviour {
             float attackRotationZ = Mathf.Atan2(attackDirection.y, attackDirection.x) * Mathf.Rad2Deg;
             attackOrigin.transform.rotation = Quaternion.Euler(new Vector3(0, 0, attackRotationZ - 90));
 
-            myAnimator.SetBool("isAttacking",true);
+            myAnimator.SetBool("isAttacking", true);
+            
         }
 
         if (Input.GetMouseButtonUp(0)) {
