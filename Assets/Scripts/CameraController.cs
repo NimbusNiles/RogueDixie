@@ -9,7 +9,7 @@ public class CameraController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        player = GameObject.FindObjectOfType<PlayerController>().gameObject;
+        player = FindObjectOfType<Player>().gameObject;
         offset.z = -10f;
     }
 	

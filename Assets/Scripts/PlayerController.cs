@@ -4,42 +4,25 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    public float moveSpeed;
-    public GameObject attackOrigin;
-    public float meleeAttackOffset;
-
+    private Player player;
     private Camera myCamera;
-    private Rigidbody2D myRigidBody;
-    private Animator myAnimator;
 
     private void Start() {
-        myRigidBody = GetComponent<Rigidbody2D>();
+        player = FindObjectOfType<Player>();
         myCamera = FindObjectOfType<Camera>();
-        myAnimator = GetComponent<Animator>();
     }
 
     private void Update() {
         // Movement
         Vector2 moveDirection = GetMoveDirection();
-        myRigidBody.velocity = moveDirection * moveSpeed;
+        player.Move(moveDirection);
 
         // Attack
-        if (Input.GetMouseButtonDown(0)) {
-            Vector2 mousePosition = myCamera.ScreenToWorldPoint(Input.mousePosition);
-
-            // Set position
-            Vector2 attackDirection = (mousePosition - new Vector2(transform.position.x,transform.position.y));
-            attackOrigin.transform.localPosition = attackDirection.normalized * meleeAttackOffset;
-
-            // Set rotation
-            float attackRotationZ = Mathf.Atan2(attackDirection.y, attackDirection.x) * Mathf.Rad2Deg;
-            attackOrigin.transform.rotation = Quaternion.Euler(new Vector3(0, 0, attackRotationZ - 90));
-
-            myAnimator.SetBool("isAttacking",true);
-        }
-
-        if (Input.GetMouseButtonUp(0)) {
-            myAnimator.SetBool("isAttacking", false);
+        if (Input.GetMouseButton(0)) {
+            Vector2 mousePositionInWorld = myCamera.ScreenToWorldPoint(Input.mousePosition);
+            player.MainAttack( mousePositionInWorld );
+        }else if (Input.GetMouseButtonUp(0)) {
+            player.StopAttack();
         }
     }
 
@@ -65,9 +48,5 @@ public class PlayerController : MonoBehaviour {
 
         return moveDirection;
 
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision) {
-        print(collision + "rekt");
     }
 }
