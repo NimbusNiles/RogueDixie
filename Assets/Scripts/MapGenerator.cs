@@ -6,11 +6,11 @@ public class MapGenerator : MonoBehaviour {
 
     public GameObject floorTile;
     public GameObject wallTile;
-    public float xMin;
-    public float xMax;
-    public float yMin;
-    public float yMax;
 
+    private float xMin;
+    private float xMax;
+    private float yMin;
+    private float yMax;
     private GameObject mapSize;
     private GameObject mapTiles;
 
@@ -60,5 +60,6 @@ public class MapGenerator : MonoBehaviour {
         GameObject tile = Instantiate(tileObject, tilePosition, Quaternion.identity) as GameObject;
         tile.transform.parent = mapTiles.transform;
         tile.GetComponent<SpriteRenderer>().sortingLayerName = "MapTiles";
+        tile.layer = LayerMask.NameToLayer("Obstacles");
     }
 }
