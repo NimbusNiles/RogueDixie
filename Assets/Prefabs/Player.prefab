@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 60772135184204770}
   - component: {fileID: 95928535928264686}
   - component: {fileID: 114949081811044180}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4945600018526596}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shield Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4575375059265458}
   - component: {fileID: 212549557267465062}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Weapon Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4792492753991950}
   - component: {fileID: 212121970089259016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,8 @@ GameObject:
   - component: {fileID: 212876753467756258}
   - component: {fileID: 61789975765651534}
   - component: {fileID: 50941639018868224}
-  m_Layer: 0
+  - component: {fileID: 114038004643277386}
+  m_Layer: 10
   m_Name: Animation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4268255929870546}
   - component: {fileID: 114171282552818832}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,6 +309,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114038004643277386
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1678502941093978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c8fc19392a34844ab8adfb270ae4b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
 --- !u!114 &114171282552818832
 MonoBehaviour:
   m_ObjectHideFlags: 1

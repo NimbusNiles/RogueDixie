@@ -8,6 +8,9 @@ public class Attack : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Health health = collision.GetComponent<Health>();
-        health.GetDamage(damage);
+        if (health)
+        {
+            health.GetDamage(damage);
+        }
     }
 }
