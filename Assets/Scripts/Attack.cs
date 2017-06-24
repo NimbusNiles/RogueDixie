@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Attack : MonoBehaviour {
+    public float damage = 20;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Health health = collision.GetComponent<Health>();
+        health.GetDamage(damage);
+    }
 }
