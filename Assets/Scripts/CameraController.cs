@@ -10,6 +10,8 @@ public class CameraController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         player = FindObjectOfType<Player>().gameObject;
+        offset.x = 1f / 32f;
+        offset.y = 1f / 32f;
         offset.z = -10f;
     }
 	
