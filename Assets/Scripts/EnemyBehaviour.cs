@@ -40,7 +40,6 @@ public class EnemyBehaviour : MonoBehaviour {
 
         if (distanceToPlayer <= aggroRange)
         {
-            Debug.Log("Aggro'd");
             Vector2 directionToPlayer = posDelta.normalized;
             Vector2 velocity = directionToPlayer * speed;
             transform.Translate(velocity * Time.deltaTime);

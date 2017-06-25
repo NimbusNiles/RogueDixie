@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 11e8d454e4614de419c2e059f7c596d4
-timeCreated: 1498291258
+timeCreated: 1498348256
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -1409,7 +1409,7 @@ TextureImporter:
     21302804: roguelikeSheet_transparent_1402
     21302806: roguelikeSheet_transparent_1403
     21302808: roguelikeSheet_transparent_1404
-    21302810: roguelikeSheet_transparent_1405
+    21302810: Healthbar_Mid
     21302812: roguelikeSheet_transparent_1406
     21302814: roguelikeSheet_transparent_1407
     21302816: roguelikeSheet_transparent_1408
@@ -1632,9 +1632,9 @@ TextureImporter:
     21303250: roguelikeSheet_transparent_1625
     21303252: roguelikeSheet_transparent_1626
     21303254: roguelikeSheet_transparent_1627
-    21303256: roguelikeSheet_transparent_1628
-    21303258: roguelikeSheet_transparent_1629
-    21303260: roguelikeSheet_transparent_1630
+    21303256: Healthbar_Bg_Left
+    21303258: Healthbar_Bg_Mid
+    21303260: Healthbar_Bg_Right
     21303262: roguelikeSheet_transparent_1631
     21303264: roguelikeSheet_transparent_1632
     21303266: roguelikeSheet_transparent_1633
@@ -20039,7 +20039,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_1405
+      name: Healthbar_Mid
       rect:
         serializedVersion: 2
         x: 527
@@ -22938,7 +22938,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_1628
+      name: Healthbar_Bg_Left
       rect:
         serializedVersion: 2
         x: 510
@@ -22951,7 +22951,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_1629
+      name: Healthbar_Bg_Mid
       rect:
         serializedVersion: 2
         x: 527
@@ -22964,7 +22964,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_1630
+      name: Healthbar_Bg_Right
       rect:
         serializedVersion: 2
         x: 544
