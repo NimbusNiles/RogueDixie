@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 456435d7777f27d43932bc7aa26db7bd
-timeCreated: 1498291895
+timeCreated: 1498420200
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -411,7 +411,7 @@ TextureImporter:
     21300808: roguelikeChar_transparent_404
     21300810: roguelikeChar_transparent_405
     21300812: roguelikeChar_transparent_406
-    21300814: roguelikeChar_transparent_407
+    21300814: Vendor
     21300816: roguelikeChar_transparent_408
     21300818: roguelikeChar_transparent_409
     21300820: roguelikeChar_transparent_410
@@ -5809,7 +5809,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeChar_transparent_407
+      name: Vendor
       rect:
         serializedVersion: 2
         x: 17

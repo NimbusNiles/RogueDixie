@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 11e8d454e4614de419c2e059f7c596d4
-timeCreated: 1498348256
+timeCreated: 1498422569
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -9,11 +9,11 @@ TextureImporter:
     21300004: roguelikeSheet_transparent_2
     21300006: roguelikeSheet_transparent_3
     21300008: roguelikeSheet_transparent_4
-    21300010: roguelikeSheet_transparent_5
+    21300010: Ground_Grass_01
     21300012: roguelikeSheet_transparent_6
     21300014: roguelikeSheet_transparent_7
     21300016: roguelikeSheet_transparent_8
-    21300018: roguelikeSheet_transparent_9
+    21300018: Ground_StoneCobble_01
     21300020: roguelikeSheet_transparent_10
     21300022: roguelikeSheet_transparent_11
     21300024: roguelikeSheet_transparent_12
@@ -66,11 +66,11 @@ TextureImporter:
     21300118: roguelikeSheet_transparent_59
     21300120: roguelikeSheet_transparent_60
     21300122: roguelikeSheet_transparent_61
-    21300124: roguelikeSheet_transparent_62
+    21300124: Ground_Grass_02
     21300126: roguelikeSheet_transparent_63
     21300128: roguelikeSheet_transparent_64
     21300130: roguelikeSheet_transparent_65
-    21300132: roguelikeSheet_transparent_66
+    21300132: Ground_GrassCobble_01
     21300134: roguelikeSheet_transparent_67
     21300136: roguelikeSheet_transparent_68
     21300138: roguelikeSheet_transparent_69
@@ -124,7 +124,7 @@ TextureImporter:
     21300234: roguelikeSheet_transparent_117
     21300236: roguelikeSheet_transparent_118
     21300238: roguelikeSheet_transparent_119
-    21300240: roguelikeSheet_transparent_120
+    21300240: Ground_Path_Stone
     21300242: roguelikeSheet_transparent_121
     21300244: roguelikeSheet_transparent_122
     21300246: roguelikeSheet_transparent_123
@@ -728,11 +728,11 @@ TextureImporter:
     21301442: roguelikeSheet_transparent_721
     21301444: roguelikeSheet_transparent_722
     21301446: roguelikeSheet_transparent_723
-    21301448: roguelikeSheet_transparent_724
-    21301450: roguelikeSheet_transparent_725
-    21301452: roguelikeSheet_transparent_726
-    21301454: roguelikeSheet_transparent_727
-    21301456: roguelikeSheet_transparent_728
+    21301448: Ground_Path_Stone_downT
+    21301450: Ground_Path_Stone_leftT
+    21301452: Ground_Path_Stone_turn_NW
+    21301454: Ground_Path_Stone_turn_NE
+    21301456: Ground_Path_Stone_Vertical
     21301458: roguelikeSheet_transparent_729
     21301460: roguelikeSheet_transparent_730
     21301462: roguelikeSheet_transparent_731
@@ -783,11 +783,11 @@ TextureImporter:
     21301552: roguelikeSheet_transparent_776
     21301554: roguelikeSheet_transparent_777
     21301556: roguelikeSheet_transparent_778
-    21301558: roguelikeSheet_transparent_779
-    21301560: roguelikeSheet_transparent_780
-    21301562: roguelikeSheet_transparent_781
-    21301564: roguelikeSheet_transparent_782
-    21301566: roguelikeSheet_transparent_783
+    21301558: Ground_Path_Stone_rightT
+    21301560: Ground_Path_Stone_upT
+    21301562: Ground_Path_Stone_turn_SW
+    21301564: Ground_Path_Stone_turn_SE
+    21301566: Ground_Path_Stone_Horizontal
     21301568: roguelikeSheet_transparent_784
     21301570: roguelikeSheet_transparent_785
     21301572: roguelikeSheet_transparent_786
@@ -837,14 +837,14 @@ TextureImporter:
     21301660: roguelikeSheet_transparent_830
     21301662: roguelikeSheet_transparent_831
     21301664: roguelikeSheet_transparent_832
-    21301666: roguelikeSheet_transparent_833
-    21301668: roguelikeSheet_transparent_834
-    21301670: roguelikeSheet_transparent_835
+    21301666: Grass_NW
+    21301668: Grass_N
+    21301670: Grass_NE
     21301672: roguelikeSheet_transparent_836
     21301674: roguelikeSheet_transparent_837
-    21301676: roguelikeSheet_transparent_838
-    21301678: roguelikeSheet_transparent_839
-    21301680: roguelikeSheet_transparent_840
+    21301676: Stone_NW
+    21301678: Stone_N
+    21301680: Stone_NE
     21301682: roguelikeSheet_transparent_841
     21301684: roguelikeSheet_transparent_842
     21301686: roguelikeSheet_transparent_843
@@ -894,14 +894,14 @@ TextureImporter:
     21301774: roguelikeSheet_transparent_887
     21301776: roguelikeSheet_transparent_888
     21301778: roguelikeSheet_transparent_889
-    21301780: roguelikeSheet_transparent_890
-    21301782: roguelikeSheet_transparent_891
-    21301784: roguelikeSheet_transparent_892
+    21301780: Grass_W
+    21301782: Grass
+    21301784: Grass_E
     21301786: roguelikeSheet_transparent_893
     21301788: roguelikeSheet_transparent_894
-    21301790: roguelikeSheet_transparent_895
-    21301792: roguelikeSheet_transparent_896
-    21301794: roguelikeSheet_transparent_897
+    21301790: Stone_W
+    21301792: Stone
+    21301794: Stone_E
     21301796: roguelikeSheet_transparent_898
     21301798: roguelikeSheet_transparent_899
     21301800: roguelikeSheet_transparent_900
@@ -949,14 +949,14 @@ TextureImporter:
     21301884: roguelikeSheet_transparent_942
     21301886: roguelikeSheet_transparent_943
     21301888: roguelikeSheet_transparent_944
-    21301890: roguelikeSheet_transparent_945
-    21301892: roguelikeSheet_transparent_946
-    21301894: roguelikeSheet_transparent_947
+    21301890: Grass_SW
+    21301892: Grass_S
+    21301894: Grass_SE
     21301896: roguelikeSheet_transparent_948
     21301898: roguelikeSheet_transparent_949
-    21301900: roguelikeSheet_transparent_950
-    21301902: roguelikeSheet_transparent_951
-    21301904: roguelikeSheet_transparent_952
+    21301900: Stone_SW
+    21301902: Stone_S
+    21301904: Stone_SE
     21301906: roguelikeSheet_transparent_953
     21301908: roguelikeSheet_transparent_954
     21301910: roguelikeSheet_transparent_955
@@ -1393,9 +1393,9 @@ TextureImporter:
     21302772: roguelikeSheet_transparent_1386
     21302774: roguelikeSheet_transparent_1387
     21302776: roguelikeSheet_transparent_1388
-    21302778: roguelikeSheet_transparent_1389
-    21302780: roguelikeSheet_transparent_1390
-    21302782: roguelikeSheet_transparent_1391
+    21302778: UI_Inventory_NW
+    21302780: UI_Inventory_N
+    21302782: UI_Inventory_NE
     21302784: roguelikeSheet_transparent_1392
     21302786: roguelikeSheet_transparent_1393
     21302788: roguelikeSheet_transparent_1394
@@ -1449,9 +1449,9 @@ TextureImporter:
     21302884: roguelikeSheet_transparent_1442
     21302886: roguelikeSheet_transparent_1443
     21302888: roguelikeSheet_transparent_1444
-    21302890: roguelikeSheet_transparent_1445
-    21302892: roguelikeSheet_transparent_1446
-    21302894: roguelikeSheet_transparent_1447
+    21302890: UI_Inventory_W
+    21302892: UI_Inventory_Mid
+    21302894: UI_Inventory_E
     21302896: roguelikeSheet_transparent_1448
     21302898: roguelikeSheet_transparent_1449
     21302900: roguelikeSheet_transparent_1450
@@ -1505,9 +1505,9 @@ TextureImporter:
     21302996: roguelikeSheet_transparent_1498
     21302998: roguelikeSheet_transparent_1499
     21303000: roguelikeSheet_transparent_1500
-    21303002: roguelikeSheet_transparent_1501
-    21303004: roguelikeSheet_transparent_1502
-    21303006: roguelikeSheet_transparent_1503
+    21303002: UI_Inventory_SW
+    21303004: UI_Inventory_S
+    21303006: UI_Inventory_SE
     21303008: roguelikeSheet_transparent_1504
     21303010: roguelikeSheet_transparent_1505
     21303012: roguelikeSheet_transparent_1506
@@ -1839,7 +1839,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_5
+      name: Ground_Grass_01
       rect:
         serializedVersion: 2
         x: 85
@@ -1891,7 +1891,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_9
+      name: Ground_StoneCobble_01
       rect:
         serializedVersion: 2
         x: 153
@@ -2580,7 +2580,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_62
+      name: Ground_Grass_02
       rect:
         serializedVersion: 2
         x: 85
@@ -2632,7 +2632,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_66
+      name: Ground_GrassCobble_01
       rect:
         serializedVersion: 2
         x: 153
@@ -3334,7 +3334,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_120
+      name: Ground_Path_Stone
       rect:
         serializedVersion: 2
         x: 102
@@ -11186,7 +11186,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_724
+      name: Ground_Path_Stone_downT
       rect:
         serializedVersion: 2
         x: 85
@@ -11199,7 +11199,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_725
+      name: Ground_Path_Stone_leftT
       rect:
         serializedVersion: 2
         x: 102
@@ -11212,7 +11212,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_726
+      name: Ground_Path_Stone_turn_NW
       rect:
         serializedVersion: 2
         x: 119
@@ -11225,7 +11225,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_727
+      name: Ground_Path_Stone_turn_NE
       rect:
         serializedVersion: 2
         x: 136
@@ -11238,7 +11238,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_728
+      name: Ground_Path_Stone_Vertical
       rect:
         serializedVersion: 2
         x: 153
@@ -11901,7 +11901,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_779
+      name: Ground_Path_Stone_rightT
       rect:
         serializedVersion: 2
         x: 85
@@ -11914,7 +11914,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_780
+      name: Ground_Path_Stone_upT
       rect:
         serializedVersion: 2
         x: 102
@@ -11927,7 +11927,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_781
+      name: Ground_Path_Stone_turn_SW
       rect:
         serializedVersion: 2
         x: 119
@@ -11940,7 +11940,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_782
+      name: Ground_Path_Stone_turn_SE
       rect:
         serializedVersion: 2
         x: 136
@@ -11953,7 +11953,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_783
+      name: Ground_Path_Stone_Horizontal
       rect:
         serializedVersion: 2
         x: 153
@@ -12603,7 +12603,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_833
+      name: Grass_NW
       rect:
         serializedVersion: 2
         x: 34
@@ -12616,7 +12616,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_834
+      name: Grass_N
       rect:
         serializedVersion: 2
         x: 51
@@ -12629,7 +12629,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_835
+      name: Grass_NE
       rect:
         serializedVersion: 2
         x: 68
@@ -12668,7 +12668,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_838
+      name: Stone_NW
       rect:
         serializedVersion: 2
         x: 119
@@ -12681,7 +12681,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_839
+      name: Stone_N
       rect:
         serializedVersion: 2
         x: 136
@@ -12694,7 +12694,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_840
+      name: Stone_NE
       rect:
         serializedVersion: 2
         x: 153
@@ -13344,7 +13344,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_890
+      name: Grass_W
       rect:
         serializedVersion: 2
         x: 34
@@ -13357,7 +13357,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_891
+      name: Grass
       rect:
         serializedVersion: 2
         x: 51
@@ -13370,7 +13370,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_892
+      name: Grass_E
       rect:
         serializedVersion: 2
         x: 68
@@ -13409,7 +13409,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_895
+      name: Stone_W
       rect:
         serializedVersion: 2
         x: 119
@@ -13422,7 +13422,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_896
+      name: Stone
       rect:
         serializedVersion: 2
         x: 136
@@ -13435,7 +13435,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_897
+      name: Stone_E
       rect:
         serializedVersion: 2
         x: 153
@@ -14059,7 +14059,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_945
+      name: Grass_SW
       rect:
         serializedVersion: 2
         x: 34
@@ -14072,7 +14072,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_946
+      name: Grass_S
       rect:
         serializedVersion: 2
         x: 51
@@ -14085,7 +14085,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_947
+      name: Grass_SE
       rect:
         serializedVersion: 2
         x: 68
@@ -14124,7 +14124,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_950
+      name: Stone_SW
       rect:
         serializedVersion: 2
         x: 119
@@ -14137,7 +14137,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_951
+      name: Stone_S
       rect:
         serializedVersion: 2
         x: 136
@@ -14150,7 +14150,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_952
+      name: Stone_SE
       rect:
         serializedVersion: 2
         x: 153
@@ -19831,7 +19831,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_1389
+      name: UI_Inventory_NW
       rect:
         serializedVersion: 2
         x: 255
@@ -19844,7 +19844,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_1390
+      name: UI_Inventory_N
       rect:
         serializedVersion: 2
         x: 272
@@ -19857,7 +19857,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_1391
+      name: UI_Inventory_NE
       rect:
         serializedVersion: 2
         x: 289
@@ -20559,7 +20559,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_1445
+      name: UI_Inventory_W
       rect:
         serializedVersion: 2
         x: 255
@@ -20572,7 +20572,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_1446
+      name: UI_Inventory_Mid
       rect:
         serializedVersion: 2
         x: 272
@@ -20585,7 +20585,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_1447
+      name: UI_Inventory_E
       rect:
         serializedVersion: 2
         x: 289
@@ -21287,7 +21287,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_1501
+      name: UI_Inventory_SW
       rect:
         serializedVersion: 2
         x: 255
@@ -21300,7 +21300,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_1502
+      name: UI_Inventory_S
       rect:
         serializedVersion: 2
         x: 272
@@ -21313,7 +21313,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_1503
+      name: UI_Inventory_SE
       rect:
         serializedVersion: 2
         x: 289
