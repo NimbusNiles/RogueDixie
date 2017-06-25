@@ -10,7 +10,7 @@ public class Attack : MonoBehaviour {
         Health health = collision.GetComponent<Health>();
         if (health)
         {
-            health.GetDamage(damage);
+            health.DealDamage(damage);
         }
     }
 }

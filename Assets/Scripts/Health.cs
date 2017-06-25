@@ -5,20 +5,20 @@ public class Health : MonoBehaviour {
 
     public float health = 100f;
     private float maxHealth;
-    private Healthbar healthbar;
+    private Healthbar healthBar;
 
     void Start()
     {
-        maxHealth = health;     //If we plan on increasing/decreasing maxHealth after enemy instantiation, we might need a more elegant solution to give this its value.
-        healthbar = GetComponentInChildren<Healthbar>();
+        maxHealth = health;     //If we plan on increasing/decreasing maxHealth after enemy instantiation, we might need a more elegant solution to give this its value
+        healthBar = GetComponentInChildren<Healthbar>();
     }
 
-    public void GetDamage(float damage)
+    public void DealDamage(float damage)
     {
         health -= damage;
-        if (healthbar)          //Since player doesn't have a healthbar (yet) and also uses this method, checks to see if healthbar == null.
+        if (healthBar)          //Since player doesn't have a health bar (yet) and also uses this method, checks to see if healthBar == null
         {
-            healthbar.SetHealthbar(health, maxHealth);
+            healthBar.SetHealthbar(health, maxHealth);
         }
 
         if (health <= 0)

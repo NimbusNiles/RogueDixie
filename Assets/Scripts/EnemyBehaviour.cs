@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyBehaviour : MonoBehaviour {
 
     private Player player;
+
     private float aggroRange;
     private float speed;
     private float recoilSpeed;
@@ -17,7 +18,7 @@ public class EnemyBehaviour : MonoBehaviour {
         recoilSpeed = 2f;
     }
 
-    void Update () {
+    void FixedUpdate () {
         CheckAggro();
 	}
 
@@ -25,25 +26,28 @@ public class EnemyBehaviour : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Player")
         {
-            player.GetComponent<Health>().GetDamage(20f);
-            Vector2 directionToPlayer = (player.transform.position - transform.position).normalized;
-            transform.Translate(directionToPlayer * - recoilSpeed);
+            AttackPlayer();
         }
     }
 
     void CheckAggro()
     {
-        Vector2 playerPos = player.transform.position;
-        Vector2 myPos = transform.position;
-        Vector2 posDelta = playerPos - myPos;
+        Vector2 posDelta = player.transform.position - transform.position;
         float distanceToPlayer = posDelta.magnitude;
 
         if (distanceToPlayer <= aggroRange)
         {
             Vector2 directionToPlayer = posDelta.normalized;
             Vector2 velocity = directionToPlayer * speed;
-            transform.Translate(velocity * Time.deltaTime);
+            transform.Translate(velocity * Time.fixedDeltaTime);
         }
         
+    }
+
+    void AttackPlayer()
+    {
+        player.GetComponent<Health>().DealDamage(20f);                   //Deal damage to player
+        Vector2 directionToPlayer = (player.transform.position - transform.position).normalized;
+        transform.Translate(-(directionToPlayer * recoilSpeed));        //Give velocity opposite to player's position, i.e. recoil
     }
 }
