@@ -323,7 +323,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8727f3f3d9052ee4ab5ab051dd32ca25, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1341073790
+--- !u!20 &1576590869 stripped
+Camera:
+  m_PrefabParentObject: {fileID: 20575065425705266, guid: c3a6b49b635118c41803cfabdbd2555b,
+    type: 2}
+  m_PrefabInternal: {fileID: 126172726}
+--- !u!1001 &1628553670
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -367,19 +372,15 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1576590869}
-    - target: {fileID: 212866050404055886, guid: 7c98222ffb8447d4a9927a978705bd61,
+    - target: {fileID: 114127931585364438, guid: 7c98222ffb8447d4a9927a978705bd61,
         type: 2}
-      propertyPath: m_Enabled
+      propertyPath: m_Type
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114684418537035442, guid: 7c98222ffb8447d4a9927a978705bd61, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7c98222ffb8447d4a9927a978705bd61, type: 2}
   m_IsPrefabParent: 0
---- !u!20 &1576590869 stripped
-Camera:
-  m_PrefabParentObject: {fileID: 20575065425705266, guid: c3a6b49b635118c41803cfabdbd2555b,
-    type: 2}
-  m_PrefabInternal: {fileID: 126172726}
 --- !u!1001 &1984741745
 Prefab:
   m_ObjectHideFlags: 0
