@@ -15,17 +15,22 @@ public class CameraController : MonoBehaviour {
     private float camClampMaxX;
     private float camClampMaxY;
     private Vector3 camClamp;
+    private float cameraAspect;
+
+    //TODO: tidy up (e.g. put camera component in a variable), call camera.ResetAspect() to fix camera issues after resizing
 
 	void Start () {
         player = FindObjectOfType<Player>().gameObject;
         mapSize = FindObjectOfType<MapSize>().transform;
         mapPosition = mapSize.position;
-        mapScale = mapSize.localScale;
+        mapScale = mapSize.localScale + new Vector3(3f,3f,0); //compensating for the fact that the tiles lie 3 units outside the MapSize object in both directions
         cameraSize = GetComponent<Camera>().orthographicSize;
+        cameraAspect = GetComponent<Camera>().aspect;
 
-        camClampMinX = mapPosition.x - .5f * mapScale.x + cameraSize;
+        camClampMinX = mapPosition.x - .5f * mapScale.x + cameraSize * cameraAspect;
+        camClampMaxX = mapPosition.x + .5f * mapScale.x - cameraSize * cameraAspect;
+
         camClampMinY = mapPosition.y - .5f * mapScale.y + cameraSize;
-        camClampMaxX = mapPosition.x + .5f * mapScale.x - cameraSize;
         camClampMaxY = mapPosition.y + .5f * mapScale.y - cameraSize;
 
         offset.x = 1f / 32f;
