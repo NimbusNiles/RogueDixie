@@ -78,9 +78,9 @@ public class Interact : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
-        {
-            AccessInventory();
-        }
+    {
+        AccessInventory();
+    }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
