@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Hit : MonoBehaviour {
 
-    private float hitDamage = 0;
+    private float hitDamage;
 
     public void SetDamage(float damage) {
         hitDamage = damage;
