@@ -5,18 +5,15 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     private Player player;
-    private Camera myCamera;
 
     private void Start() {
         player = FindObjectOfType<Player>();
-        myCamera = FindObjectOfType<Camera>();
     }
 
     private void Update() {
         // Attack
         if (Input.GetMouseButton(0)) {
-            
-            player.MainAttack( mousePositionInWorld );
+            player.MainAttack();
         }else if (Input.GetMouseButtonUp(0)) {
            // player.StopAttack();
         }

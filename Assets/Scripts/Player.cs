@@ -16,7 +16,8 @@ public class Player : MonoBehaviour {
         myRigidbody.velocity = moveDirection * moveSpeed;
     }
 
-    public void MainAttack(Vector2 mousePositionInWorld) {
+    public void MainAttack() {
+        // finding weapon by IWeapon, only works with a single weapon equipped.
         GetComponentInChildren<IWeapon>().PerformAttack();
     }
 
