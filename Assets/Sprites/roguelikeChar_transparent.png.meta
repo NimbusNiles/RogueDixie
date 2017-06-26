@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 456435d7777f27d43932bc7aa26db7bd
-timeCreated: 1498420200
+timeCreated: 1498459579
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -362,7 +362,7 @@ TextureImporter:
     21300710: roguelikeChar_transparent_355
     21300712: roguelikeChar_transparent_356
     21300714: roguelikeChar_transparent_357
-    21300716: roguelikeChar_transparent_358
+    21300716: Dagger_Wood
     21300718: roguelikeChar_transparent_359
     21300720: roguelikeChar_transparent_360
     21300722: roguelikeChar_transparent_361
@@ -5172,7 +5172,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeChar_transparent_358
+      name: Dagger_Wood
       rect:
         serializedVersion: 2
         x: 714

@@ -15,10 +15,10 @@ public class PlayerController : MonoBehaviour {
     private void Update() {
         // Attack
         if (Input.GetMouseButton(0)) {
-            Vector2 mousePositionInWorld = myCamera.ScreenToWorldPoint(Input.mousePosition);
+            
             player.MainAttack( mousePositionInWorld );
         }else if (Input.GetMouseButtonUp(0)) {
-            player.StopAttack();
+           // player.StopAttack();
         }
     }
 
