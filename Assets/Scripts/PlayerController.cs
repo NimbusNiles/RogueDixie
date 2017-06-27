@@ -6,13 +6,6 @@ public class PlayerController : MonoBehaviour {
 
     private Player player;
 
-    //Ramon: Sprites for animation
-    public Sprite frontside;
-    public Sprite backside;
-    public Sprite leftside;
-    public Sprite rightside;
-
-
     private void Start() {
         player = FindObjectOfType<Player>();
     }
@@ -38,28 +31,14 @@ public class PlayerController : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.W)) {
             moveDirection.y = 1;
-
-            //RAMON: player animation
-            GameObject.Find("Body Sprite").GetComponent<SpriteRenderer>().sprite = backside;
-
         } else if (Input.GetKey(KeyCode.S)) {
             moveDirection.y = -1;
-
-            //RAMON: player animation
-            GameObject.Find("Body Sprite").GetComponent<SpriteRenderer>().sprite = frontside;
         } 
 
         if (Input.GetKey(KeyCode.D)) {
             moveDirection.x = 1;
-
-            //RAMON: player animation
-            GameObject.Find("Body Sprite").GetComponent<SpriteRenderer>().sprite = rightside;
-
         } else if (Input.GetKey(KeyCode.A)) {
             moveDirection.x = -1;
-
-            //RAMON: player animation
-            GameObject.Find("Body Sprite").GetComponent<SpriteRenderer>().sprite = leftside;
         } 
 
         return moveDirection;

@@ -51,7 +51,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 417d8b1c5e543114c830ded29c51f269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frontside: {fileID: 21300000, guid: 7005c1c937f529746940850a9adb22c4, type: 3}
-  backside: {fileID: 21300000, guid: fdfe5dc549f48174080d39be2c02f0ee, type: 3}
-  leftside: {fileID: 21300000, guid: 94ba33100c8c78945ada0eee9c9ea4b4, type: 3}
-  rightside: {fileID: 21300000, guid: 7645fa3d2b142b34ba13a18613030b61, type: 3}

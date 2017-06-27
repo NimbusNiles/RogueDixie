@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 11e8d454e4614de419c2e059f7c596d4
-timeCreated: 1498566218
+timeCreated: 1498509669
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -296,7 +296,7 @@ TextureImporter:
     21300578: roguelikeSheet_transparent_289
     21300580: roguelikeSheet_transparent_290
     21300582: roguelikeSheet_transparent_291
-    21300584: Vendor_Wares01
+    21300584: roguelikeSheet_transparent_292
     21300586: roguelikeSheet_transparent_293
     21300588: roguelikeSheet_transparent_294
     21300590: roguelikeSheet_transparent_295
@@ -344,12 +344,12 @@ TextureImporter:
     21300674: roguelikeSheet_transparent_337
     21300676: roguelikeSheet_transparent_338
     21300678: roguelikeSheet_transparent_339
-    21300680: Props_Flowers01_NW
-    21300682: Props_Flowers01_N
-    21300684: Props_Flowers01_NE
+    21300680: roguelikeSheet_transparent_340
+    21300682: roguelikeSheet_transparent_341
+    21300684: roguelikeSheet_transparent_342
     21300686: roguelikeSheet_transparent_343
     21300688: roguelikeSheet_transparent_344
-    21300690: Vendor_Wares02
+    21300690: roguelikeSheet_transparent_345
     21300692: roguelikeSheet_transparent_346
     21300694: roguelikeSheet_transparent_347
     21300696: roguelikeSheet_transparent_348
@@ -365,8 +365,8 @@ TextureImporter:
     21300716: roguelikeSheet_transparent_358
     21300718: roguelikeSheet_transparent_359
     21300720: roguelikeSheet_transparent_360
-    21300722: Props_Doors01_1
-    21300724: Props_Doors01_2
+    21300722: roguelikeSheet_transparent_361
+    21300724: roguelikeSheet_transparent_362
     21300726: roguelikeSheet_transparent_363
     21300728: roguelikeSheet_transparent_364
     21300730: roguelikeSheet_transparent_365
@@ -383,7 +383,7 @@ TextureImporter:
     21300752: roguelikeSheet_transparent_376
     21300754: roguelikeSheet_transparent_377
     21300756: roguelikeSheet_transparent_378
-    21300758: Props_Window01
+    21300758: roguelikeSheet_transparent_379
     21300760: roguelikeSheet_transparent_380
     21300762: roguelikeSheet_transparent_381
     21300764: roguelikeSheet_transparent_382
@@ -395,9 +395,9 @@ TextureImporter:
     21300776: roguelikeSheet_transparent_388
     21300778: roguelikeSheet_transparent_389
     21300780: roguelikeSheet_transparent_390
-    21300782: Props_Flowers01_W
-    21300784: Props_Flowers01
-    21300786: Props_Flowers01_E
+    21300782: roguelikeSheet_transparent_391
+    21300784: roguelikeSheet_transparent_392
+    21300786: roguelikeSheet_transparent_393
     21300788: roguelikeSheet_transparent_394
     21300790: roguelikeSheet_transparent_395
     21300792: roguelikeSheet_transparent_396
@@ -448,9 +448,9 @@ TextureImporter:
     21300882: roguelikeSheet_transparent_441
     21300884: roguelikeSheet_transparent_442
     21300886: roguelikeSheet_transparent_443
-    21300888: Props_Flowers01_SW
-    21300890: Props_Flowers01_S
-    21300892: Props_Flowers01_SE
+    21300888: roguelikeSheet_transparent_444
+    21300890: roguelikeSheet_transparent_445
+    21300892: roguelikeSheet_transparent_446
     21300894: roguelikeSheet_transparent_447
     21300896: roguelikeSheet_transparent_448
     21300898: roguelikeSheet_transparent_449
@@ -502,9 +502,9 @@ TextureImporter:
     21300990: roguelikeSheet_transparent_495
     21300992: roguelikeSheet_transparent_496
     21300994: roguelikeSheet_transparent_497
-    21300996: Props_Flowers02_NW
+    21300996: roguelikeSheet_transparent_498
     21300998: roguelikeSheet_transparent_499
-    21301000: Props_Flowers02_NE
+    21301000: roguelikeSheet_transparent_500
     21301002: roguelikeSheet_transparent_501
     21301004: roguelikeSheet_transparent_502
     21301006: roguelikeSheet_transparent_503
@@ -612,9 +612,9 @@ TextureImporter:
     21301210: roguelikeSheet_transparent_605
     21301212: roguelikeSheet_transparent_606
     21301214: roguelikeSheet_transparent_607
-    21301216: Props_Flowers02_SW
+    21301216: roguelikeSheet_transparent_608
     21301218: roguelikeSheet_transparent_609
-    21301220: Props_Flowers02_SE
+    21301220: roguelikeSheet_transparent_610
     21301222: roguelikeSheet_transparent_611
     21301224: roguelikeSheet_transparent_612
     21301226: roguelikeSheet_transparent_613
@@ -669,9 +669,9 @@ TextureImporter:
     21301324: roguelikeSheet_transparent_662
     21301326: roguelikeSheet_transparent_663
     21301328: roguelikeSheet_transparent_664
-    21301330: Props_Flowers03_NW
+    21301330: roguelikeSheet_transparent_665
     21301332: roguelikeSheet_transparent_666
-    21301334: Props_Flowers03_NE
+    21301334: roguelikeSheet_transparent_667
     21301336: roguelikeSheet_transparent_668
     21301338: roguelikeSheet_transparent_669
     21301340: roguelikeSheet_transparent_670
@@ -780,9 +780,9 @@ TextureImporter:
     21301546: roguelikeSheet_transparent_773
     21301548: roguelikeSheet_transparent_774
     21301550: roguelikeSheet_transparent_775
-    21301552: Props_Flowers03_SW
+    21301552: roguelikeSheet_transparent_776
     21301554: roguelikeSheet_transparent_777
-    21301556: Props_Flowers03_SE
+    21301556: roguelikeSheet_transparent_778
     21301558: Ground_Path_Stone_rightT
     21301560: Ground_Path_Stone_upT
     21301562: Ground_Path_Stone_turn_SW
@@ -855,12 +855,12 @@ TextureImporter:
     21301696: roguelikeSheet_transparent_848
     21301698: roguelikeSheet_transparent_849
     21301700: roguelikeSheet_transparent_850
-    21301702: Wall01_BottomMiddle
-    21301704: Wall01_BottomLeft
+    21301702: roguelikeSheet_transparent_851
+    21301704: roguelikeSheet_transparent_852
     21301706: roguelikeSheet_transparent_853
-    21301708: Wall01_BottomRight
+    21301708: roguelikeSheet_transparent_854
     21301710: roguelikeSheet_transparent_855
-    21301712: Wall01_Middle
+    21301712: roguelikeSheet_transparent_856
     21301714: roguelikeSheet_transparent_857
     21301716: roguelikeSheet_transparent_858
     21301718: roguelikeSheet_transparent_859
@@ -932,7 +932,7 @@ TextureImporter:
     21301850: roguelikeSheet_transparent_925
     21301852: roguelikeSheet_transparent_926
     21301854: roguelikeSheet_transparent_927
-    21301856: Wall02_Side02
+    21301856: roguelikeSheet_transparent_928
     21301858: roguelikeSheet_transparent_929
     21301860: roguelikeSheet_transparent_930
     21301862: roguelikeSheet_transparent_931
@@ -1079,7 +1079,7 @@ TextureImporter:
     21302144: roguelikeSheet_transparent_1072
     21302146: roguelikeSheet_transparent_1073
     21302148: roguelikeSheet_transparent_1074
-    21302150: chimney01
+    21302150: roguelikeSheet_transparent_1075
     21302152: roguelikeSheet_transparent_1076
     21302154: roguelikeSheet_transparent_1077
     21302156: roguelikeSheet_transparent_1078
@@ -1134,7 +1134,7 @@ TextureImporter:
     21302254: roguelikeSheet_transparent_1127
     21302256: roguelikeSheet_transparent_1128
     21302258: roguelikeSheet_transparent_1129
-    21302260: chimney01_rev
+    21302260: roguelikeSheet_transparent_1130
     21302262: roguelikeSheet_transparent_1131
     21302264: roguelikeSheet_transparent_1132
     21302266: roguelikeSheet_transparent_1133
@@ -1203,12 +1203,12 @@ TextureImporter:
     21302392: roguelikeSheet_transparent_1196
     21302394: roguelikeSheet_transparent_1197
     21302396: roguelikeSheet_transparent_1198
-    21302398: Props_Roof02_6
-    21302400: Props_Roof02_5
+    21302398: roguelikeSheet_transparent_1199
+    21302400: roguelikeSheet_transparent_1200
     21302402: roguelikeSheet_transparent_1201
     21302404: roguelikeSheet_transparent_1202
     21302406: roguelikeSheet_transparent_1203
-    21302408: Props_Roof02_9
+    21302408: roguelikeSheet_transparent_1204
     21302410: roguelikeSheet_transparent_1205
     21302412: roguelikeSheet_transparent_1206
     21302414: roguelikeSheet_transparent_1207
@@ -1260,12 +1260,12 @@ TextureImporter:
     21302506: roguelikeSheet_transparent_1253
     21302508: roguelikeSheet_transparent_1254
     21302510: roguelikeSheet_transparent_1255
-    21302512: Props_Roof02_4
-    21302514: Props_Roof02_3
+    21302512: roguelikeSheet_transparent_1256
+    21302514: roguelikeSheet_transparent_1257
     21302516: roguelikeSheet_transparent_1258
     21302518: roguelikeSheet_transparent_1259
     21302520: roguelikeSheet_transparent_1260
-    21302522: Props_Roof02_8
+    21302522: roguelikeSheet_transparent_1261
     21302524: roguelikeSheet_transparent_1262
     21302526: roguelikeSheet_transparent_1263
     21302528: roguelikeSheet_transparent_1264
@@ -1312,12 +1312,12 @@ TextureImporter:
     21302610: roguelikeSheet_transparent_1305
     21302612: roguelikeSheet_transparent_1306
     21302614: roguelikeSheet_transparent_1307
-    21302616: Props_Roof02_2
-    21302618: Props_Roof02_1
+    21302616: roguelikeSheet_transparent_1308
+    21302618: roguelikeSheet_transparent_1309
     21302620: roguelikeSheet_transparent_1310
     21302622: roguelikeSheet_transparent_1311
     21302624: roguelikeSheet_transparent_1312
-    21302626: Props_Roof02_7
+    21302626: roguelikeSheet_transparent_1313
     21302628: roguelikeSheet_transparent_1314
     21302630: roguelikeSheet_transparent_1315
     21302632: roguelikeSheet_transparent_1316
@@ -5570,7 +5570,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Vendor_Wares01
+      name: roguelikeSheet_transparent_292
       rect:
         serializedVersion: 2
         x: 187
@@ -6194,7 +6194,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Flowers01_NW
+      name: roguelikeSheet_transparent_340
       rect:
         serializedVersion: 2
         x: 34
@@ -6207,7 +6207,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Flowers01_N
+      name: roguelikeSheet_transparent_341
       rect:
         serializedVersion: 2
         x: 51
@@ -6220,7 +6220,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Flowers01_NE
+      name: roguelikeSheet_transparent_342
       rect:
         serializedVersion: 2
         x: 68
@@ -6259,7 +6259,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Vendor_Wares02
+      name: roguelikeSheet_transparent_345
       rect:
         serializedVersion: 2
         x: 204
@@ -6467,7 +6467,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Doors01_1
+      name: roguelikeSheet_transparent_361
       rect:
         serializedVersion: 2
         x: 476
@@ -6480,7 +6480,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Doors01_2
+      name: roguelikeSheet_transparent_362
       rect:
         serializedVersion: 2
         x: 493
@@ -6701,7 +6701,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Window01
+      name: roguelikeSheet_transparent_379
       rect:
         serializedVersion: 2
         x: 782
@@ -6857,7 +6857,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Flowers01_W
+      name: roguelikeSheet_transparent_391
       rect:
         serializedVersion: 2
         x: 34
@@ -6870,7 +6870,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Flowers01
+      name: roguelikeSheet_transparent_392
       rect:
         serializedVersion: 2
         x: 51
@@ -6883,7 +6883,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Flowers01_E
+      name: roguelikeSheet_transparent_393
       rect:
         serializedVersion: 2
         x: 68
@@ -7546,7 +7546,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Flowers01_SW
+      name: roguelikeSheet_transparent_444
       rect:
         serializedVersion: 2
         x: 34
@@ -7559,7 +7559,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Flowers01_S
+      name: roguelikeSheet_transparent_445
       rect:
         serializedVersion: 2
         x: 51
@@ -7572,7 +7572,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Flowers01_SE
+      name: roguelikeSheet_transparent_446
       rect:
         serializedVersion: 2
         x: 68
@@ -8248,7 +8248,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Flowers02_NW
+      name: roguelikeSheet_transparent_498
       rect:
         serializedVersion: 2
         x: 34
@@ -8274,7 +8274,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Flowers02_NE
+      name: roguelikeSheet_transparent_500
       rect:
         serializedVersion: 2
         x: 68
@@ -9678,7 +9678,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Flowers02_SW
+      name: roguelikeSheet_transparent_608
       rect:
         serializedVersion: 2
         x: 34
@@ -9704,7 +9704,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Flowers02_SE
+      name: roguelikeSheet_transparent_610
       rect:
         serializedVersion: 2
         x: 68
@@ -10419,7 +10419,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Flowers03_NW
+      name: roguelikeSheet_transparent_665
       rect:
         serializedVersion: 2
         x: 34
@@ -10445,7 +10445,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Flowers03_NE
+      name: roguelikeSheet_transparent_667
       rect:
         serializedVersion: 2
         x: 68
@@ -11862,7 +11862,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Flowers03_SW
+      name: roguelikeSheet_transparent_776
       rect:
         serializedVersion: 2
         x: 34
@@ -11888,7 +11888,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Flowers03_SE
+      name: roguelikeSheet_transparent_778
       rect:
         serializedVersion: 2
         x: 68
@@ -12837,7 +12837,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Wall01_BottomMiddle
+      name: roguelikeSheet_transparent_851
       rect:
         serializedVersion: 2
         x: 340
@@ -12850,7 +12850,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Wall01_BottomLeft
+      name: roguelikeSheet_transparent_852
       rect:
         serializedVersion: 2
         x: 357
@@ -12876,7 +12876,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Wall01_BottomRight
+      name: roguelikeSheet_transparent_854
       rect:
         serializedVersion: 2
         x: 391
@@ -12902,7 +12902,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Wall01_Middle
+      name: roguelikeSheet_transparent_856
       rect:
         serializedVersion: 2
         x: 425
@@ -13838,7 +13838,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Wall02_Side02
+      name: roguelikeSheet_transparent_928
       rect:
         serializedVersion: 2
         x: 680
@@ -15749,7 +15749,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: chimney01
+      name: roguelikeSheet_transparent_1075
       rect:
         serializedVersion: 2
         x: 374
@@ -16464,7 +16464,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: chimney01_rev
+      name: roguelikeSheet_transparent_1130
       rect:
         serializedVersion: 2
         x: 374
@@ -17361,7 +17361,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Roof02_6
+      name: roguelikeSheet_transparent_1199
       rect:
         serializedVersion: 2
         x: 578
@@ -17374,7 +17374,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Roof02_5
+      name: roguelikeSheet_transparent_1200
       rect:
         serializedVersion: 2
         x: 595
@@ -17426,7 +17426,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Roof02_9
+      name: roguelikeSheet_transparent_1204
       rect:
         serializedVersion: 2
         x: 663
@@ -18102,7 +18102,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Roof02_4
+      name: roguelikeSheet_transparent_1256
       rect:
         serializedVersion: 2
         x: 578
@@ -18115,7 +18115,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Roof02_3
+      name: roguelikeSheet_transparent_1257
       rect:
         serializedVersion: 2
         x: 595
@@ -18167,7 +18167,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Roof02_8
+      name: roguelikeSheet_transparent_1261
       rect:
         serializedVersion: 2
         x: 663
@@ -18778,7 +18778,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Roof02_2
+      name: roguelikeSheet_transparent_1308
       rect:
         serializedVersion: 2
         x: 578
@@ -18791,7 +18791,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Roof02_1
+      name: roguelikeSheet_transparent_1309
       rect:
         serializedVersion: 2
         x: 595
@@ -18843,7 +18843,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Props_Roof02_7
+      name: roguelikeSheet_transparent_1313
       rect:
         serializedVersion: 2
         x: 663
