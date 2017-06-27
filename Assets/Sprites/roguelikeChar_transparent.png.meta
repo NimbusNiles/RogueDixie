@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 456435d7777f27d43932bc7aa26db7bd
-timeCreated: 1498498723
+timeCreated: 1498459579
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -101,7 +101,7 @@ TextureImporter:
     21300188: roguelikeChar_transparent_94
     21300190: roguelikeChar_transparent_95
     21300192: roguelikeChar_transparent_96
-    21300194: BaseChar_Dark
+    21300194: roguelikeChar_transparent_97
     21300196: roguelikeChar_transparent_98
     21300198: roguelikeChar_transparent_99
     21300200: roguelikeChar_transparent_100
@@ -414,7 +414,7 @@ TextureImporter:
     21300814: Vendor
     21300816: roguelikeChar_transparent_408
     21300818: roguelikeChar_transparent_409
-    21300820: Armor_Yellow
+    21300820: roguelikeChar_transparent_410
     21300822: roguelikeChar_transparent_411
     21300824: roguelikeChar_transparent_412
     21300826: roguelikeChar_transparent_413
@@ -452,7 +452,6 @@ TextureImporter:
     21300890: roguelikeChar_transparent_445
     21300892: roguelikeChar_transparent_446
     21300894: roguelikeChar_transparent_447
-    21300896: roguelikeChar_transparent_97
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -1780,7 +1779,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: BaseChar_Dark
+      name: roguelikeChar_transparent_97
       rect:
         serializedVersion: 2
         x: 17
@@ -5849,10 +5848,10 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Armor_Yellow
+      name: roguelikeChar_transparent_410
       rect:
         serializedVersion: 2
-        x: 103
+        x: 102
         y: 34
         width: 16
         height: 16
@@ -5865,7 +5864,7 @@ TextureImporter:
       name: roguelikeChar_transparent_411
       rect:
         serializedVersion: 2
-        x: 120
+        x: 119
         y: 34
         width: 16
         height: 16
@@ -6339,19 +6338,6 @@ TextureImporter:
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: roguelikeChar_transparent_97
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 24
-        width: 67
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

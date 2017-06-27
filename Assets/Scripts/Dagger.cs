@@ -23,8 +23,10 @@ public class Dagger : MonoBehaviour, IWeapon {
         hit.SetDamage(damage);
 	}
 
-    public void PerformAttack(Vector2 attackDirection, Quaternion attackRotation) {
+    public void PerformAttack() {
         if (myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle")) {
+            Vector2 attackDirection = GetAttackDirection();
+            Quaternion attackRotation = GetAttackRotation(attackDirection);
 
             animationAnchor.localPosition = attackDirection * attackOffset;
             animationAnchor.localRotation = attackRotation;
@@ -33,6 +35,17 @@ public class Dagger : MonoBehaviour, IWeapon {
         }
     }
 
-    
+    Vector2 GetAttackDirection() {
+        Vector2 mousePositionInWorld = myCamera.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 playerPosition = new Vector2(animationAnchor.position.x, animationAnchor.position.y);
+        Vector2 attackDirection = (mousePositionInWorld - playerPosition).normalized;
+        return attackDirection;
+    }
+
+    Quaternion GetAttackRotation(Vector2 attackDirection) {
+        float attackRotationZ = Mathf.Atan2(attackDirection.y, attackDirection.x) * Mathf.Rad2Deg;
+        Quaternion attackRotation = Quaternion.Euler(new Vector3(0, 0, attackRotationZ - 90));
+        return attackRotation;
+    }
 
 }

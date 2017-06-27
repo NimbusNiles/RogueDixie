@@ -1,8 +1,7 @@
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 
 public interface IWeapon {
 
-    void PerformAttack(Vector2 attackDirection, Quaternion attackRotation);
+    void PerformAttack();
 
 }
