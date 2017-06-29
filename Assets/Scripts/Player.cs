@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
     public float moveSpeed;
+
     private Animator myAnimator;
 
     private Rigidbody2D myRigidbody;
@@ -13,25 +14,26 @@ public class Player : MonoBehaviour {
     private void Start() {
         myRigidbody = GetComponent<Rigidbody2D>();
         myCamera = FindObjectOfType<Camera>();
+        myAnimator = GetComponentInChildren<Animator>();
     }
 
     public void Move(Vector2 moveDirection) {
         myRigidbody.velocity = moveDirection * moveSpeed;
         if (moveDirection.x == 1)
         {
-            moveDirection = GetComponentInChildren<Animator>();
+            myAnimator.SetTrigger("MoveRight");
         }
         if (moveDirection.x == -1)
         {
-            GetComponentInChildren<Animation>();
+            myAnimator.SetTrigger("MoveLeft");
         }
         else if (moveDirection.y == 1)
         {
-            GetComponentInChildren<Animation>();
+            myAnimator.SetTrigger("MoveUp");
         }
         else if (moveDirection.y == -1)
         {
-            GetComponentInChildren<Animation>();
+            myAnimator.SetTrigger("MoveDown");
         }
     }
 
