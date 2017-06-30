@@ -5,6 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
     public float moveSpeed;
+    [HideInInspector]
+    public bool canMove = true;
 
     private Rigidbody2D myRigidbody;
     private Camera myCamera;
@@ -15,7 +17,11 @@ public class Player : MonoBehaviour {
     }
 
     public void Move(Vector2 moveDirection) {
-        myRigidbody.velocity = moveDirection * moveSpeed;
+        if (canMove) {
+            myRigidbody.velocity = moveDirection * moveSpeed;
+        } else {
+            myRigidbody.velocity = Vector2.zero;
+        }
     }
 
     public void MainAttack() {

@@ -7,18 +7,17 @@ public class Dagger : MonoBehaviour, IWeapon {
 
     public float damage;
     public float attackOffset = 0.2f;
+    public float rageAmount;
     
-    private Hit hit;
     private Animator myAnimator;
     private Transform animationAnchor;
+    private Warrior warrior;
 
     // Use this for initialization
     void Start () {
         myAnimator = GetComponent<Animator>();
         animationAnchor = transform.GetChild(0);
-
-        hit = GetComponentInChildren<Hit>();
-        hit.SetDamage(damage);
+        warrior = GetComponentInParent<Warrior>();
 	}
 
     public void PerformAttack(Vector2 attackDirection, Quaternion attackRotation) {
@@ -31,6 +30,14 @@ public class Dagger : MonoBehaviour, IWeapon {
         }
     }
 
-    
+    public void OnHit(Collider2D collision) { 
+        Health health = collision.GetComponent<Health>();
+        if (health) {
+            health.DealDamage(damage);
+        }
+
+        warrior.AddRage(rageAmount);
+    }
+
 
 }
