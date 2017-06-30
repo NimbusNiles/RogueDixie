@@ -406,6 +406,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114538873175260684, guid: f0827dc51d697174aabdc31be3c09a88,
+        type: 2}
+      propertyPath: HUDHealthBarImage
+      value: 
+      objectReference: {fileID: 1728325527}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0827dc51d697174aabdc31be3c09a88, type: 2}
   m_IsPrefabParent: 0
@@ -708,6 +713,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a20c0f79104fd8e4283d41abc600aef4, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1728325527 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114862482215689726, guid: 3f9c616443641594f861b24ace8cf458,
+    type: 2}
+  m_PrefabInternal: {fileID: 1070825754}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1820235056
 Prefab:
   m_ObjectHideFlags: 0
