@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ff63871de41e19d48950e254559bdd7f
+timeCreated: 1498809736
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Pixel Pirate
+  fontNames:
+  - Pixel Pirate
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
