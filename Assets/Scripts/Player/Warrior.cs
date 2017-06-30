@@ -15,8 +15,8 @@ public class Warrior : MonoBehaviour {
     private Image HUDRageBarImage;
 
     private void Start() {
-        DontDestroyOnLoad(gameObject);
-        HUDRageBarImage = HUDRageBar.GetComponent<Image>();
+        //DontDestroyOnLoad(gameObject);
+        HUDRageBarImage = HUDRageBar.transform.GetChild(1).gameObject.GetComponent<Image>();
     }
 
     public void AddRage(float amount) {

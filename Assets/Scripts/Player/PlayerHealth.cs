@@ -11,18 +11,21 @@ public class PlayerHealth : MonoBehaviour {
 
     private float currentHealth;
     private PlayerMovement player;
-    private Image HUDHealthBarImage;
+    public Image HUDHealthBarImage;
 
     // Use this for initialization
     void Start () {
         player = GetComponent<PlayerMovement>();
-        HUDHealthBarImage = HUDHealthBar.GetComponent<Image>();
+        //HUDHealthBarImage = HUDHealthBar.transform.GetChild(1).gameObject.GetComponent<Image>();
         currentHealth = maxHealth;
+
+        Debug.Log(HUDHealthBarImage);
 	}
 
     public void DealDamage(float damage) {
         currentHealth -= damage;
         HUDHealthBarImage.fillAmount = currentHealth/maxHealth;
+        Debug.Log(currentHealth);
 
         if (currentHealth <= 0) {
             Die();
