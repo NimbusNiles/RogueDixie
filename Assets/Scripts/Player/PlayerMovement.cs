@@ -21,7 +21,9 @@ public class PlayerMovement : MonoBehaviour {
 
     private void Update()
     {
-        MoveAnimation();
+        if (!isDead) {
+            MoveAnimation();
+        }
     }
 
     public void Move(Vector2 moveDirection) {
