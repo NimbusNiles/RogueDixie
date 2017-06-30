@@ -17,26 +17,16 @@ public class Player : MonoBehaviour {
         myAnimator = GetComponentInChildren<Animator>();
     }
 
-    public void Move(Vector2 moveDirection) {
-        myRigidbody.velocity = moveDirection * moveSpeed;
-        if (moveDirection.x == 1)
-        {
-            myAnimator.SetTrigger("MoveRight");
-        }
-        if (moveDirection.x == -1)
-        {
-            myAnimator.SetTrigger("MoveLeft");
-        }
-        else if (moveDirection.y == 1)
-        {
-            myAnimator.SetTrigger("MoveUp");
-        }
-        else if (moveDirection.y == -1)
-        {
-            myAnimator.SetTrigger("MoveDown");
-        }
+    private void Update()
+    {
+        MoveAnimation();
     }
 
+    public void Move(Vector2 moveDirection) {
+        myRigidbody.velocity = moveDirection * moveSpeed;
+    }
+
+    
     public void MainAttack() {
         Vector2 attackDirection = GetAttackDirection();
         Quaternion attackRotation = GetAttackRotation(attackDirection);
@@ -57,4 +47,45 @@ public class Player : MonoBehaviour {
         Quaternion attackRotation = Quaternion.Euler(new Vector3(0, 0, attackRotationZ - 90));
         return attackRotation;
     }
+
+
+    public void MoveAnimation()
+    {
+        if (Input.GetKey(KeyCode.W))
+        {
+            myAnimator.SetBool("MoveUp", true);
+            myAnimator.SetBool("MoveDown", false);
+            myAnimator.SetBool("MoveLeft", false);
+            myAnimator.SetBool("MoveRight", false);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            myAnimator.SetBool("MoveUp", false);
+            myAnimator.SetBool("MoveDown", true);
+            myAnimator.SetBool("MoveLeft", false);
+            myAnimator.SetBool("MoveRight", false);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            myAnimator.SetBool("MoveUp", false);
+            myAnimator.SetBool("MoveDown", false);
+            myAnimator.SetBool("MoveLeft", true);
+            myAnimator.SetBool("MoveRight", false);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            myAnimator.SetBool("MoveUp", false);
+            myAnimator.SetBool("MoveDown", false);
+            myAnimator.SetBool("MoveLeft", false);
+            myAnimator.SetBool("MoveRight", true);
+        }
+        else if (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.W))
+        {
+            myAnimator.SetBool("MoveUp", false);
+            myAnimator.SetBool("MoveDown", false);
+            myAnimator.SetBool("MoveLeft", false);
+            myAnimator.SetBool("MoveRight", false);
+        }
+    }
+        
 }
