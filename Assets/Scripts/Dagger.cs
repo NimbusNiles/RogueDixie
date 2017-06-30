@@ -10,13 +10,11 @@ public class Dagger : MonoBehaviour, IWeapon {
     
     private Hit hit;
     private Animator myAnimator;
-    private Camera myCamera;
     private Transform animationAnchor;
 
     // Use this for initialization
     void Start () {
         myAnimator = GetComponent<Animator>();
-        myCamera = FindObjectOfType<Camera>();
         animationAnchor = transform.GetChild(0);
 
         hit = GetComponentInChildren<Hit>();
