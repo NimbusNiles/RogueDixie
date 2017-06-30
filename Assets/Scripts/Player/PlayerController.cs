@@ -38,7 +38,8 @@ public class PlayerController : MonoBehaviour {
             moveDirection.x = 1;
         } else if (Input.GetKey(KeyCode.A)) {
             moveDirection.x = -1;
-        }
+        } 
+
         return moveDirection;
     }
 }
