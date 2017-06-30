@@ -6,26 +6,23 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour {
 
     public float maxHealth;
-    public GameObject HUDHealthBar;
-    public GameObject wastedScreen;
 
+    private GameObject wastedScreen;
     private float currentHealth;
     private PlayerMovement player;
-    public Image HUDHealthBarImage;
+    private Image HUDHealthBarImage;
 
     // Use this for initialization
     void Start () {
         player = GetComponent<PlayerMovement>();
-        //HUDHealthBarImage = HUDHealthBar.transform.GetChild(1).gameObject.GetComponent<Image>();
+        HUDHealthBarImage = GameObject.Find("HealthFull").GetComponent<Image>();
+        wastedScreen = GameObject.Find("PlayerHUD").transform.Find("Wasted Screen").gameObject;
         currentHealth = maxHealth;
-
-        Debug.Log(HUDHealthBarImage);
 	}
 
     public void DealDamage(float damage) {
         currentHealth -= damage;
         HUDHealthBarImage.fillAmount = currentHealth/maxHealth;
-        Debug.Log(currentHealth);
 
         if (currentHealth <= 0) {
             Die();

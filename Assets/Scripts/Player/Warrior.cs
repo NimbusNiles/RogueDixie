@@ -8,15 +8,14 @@ public class Warrior : MonoBehaviour {
     public float maxRage;
     public float rageCooldown;
     public float rageDegen;
-    public GameObject HUDRageBar;
 
     private float currentRage = 0f;
     private float rageCooldownTimer;
     private Image HUDRageBarImage;
 
     private void Start() {
-        //DontDestroyOnLoad(gameObject);
-        HUDRageBarImage = HUDRageBar.transform.GetChild(1).gameObject.GetComponent<Image>();
+        DontDestroyOnLoad(gameObject);
+        HUDRageBarImage = GameObject.Find("ResourceFull").GetComponent<Image>();
     }
 
     public void AddRage(float amount) {
