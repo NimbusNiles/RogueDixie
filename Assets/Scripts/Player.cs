@@ -8,12 +8,20 @@ public class Player : MonoBehaviour {
     [HideInInspector]
     public bool isDead = false;
 
+    private Animator myAnimator;
+
     private Rigidbody2D myRigidbody;
     private Camera myCamera;
 
     private void Start() {
         myRigidbody = GetComponent<Rigidbody2D>();
         myCamera = FindObjectOfType<Camera>();
+        myAnimator = GetComponentInChildren<Animator>();
+    }
+
+    private void Update()
+    {
+        MoveAnimation();
     }
 
     public void Move(Vector2 moveDirection) {
@@ -24,6 +32,7 @@ public class Player : MonoBehaviour {
         }
     }
 
+    
     public void MainAttack() {
         if (!isDead) {
             Vector2 attackDirection = GetAttackDirection();
@@ -46,4 +55,45 @@ public class Player : MonoBehaviour {
         Quaternion attackRotation = Quaternion.Euler(new Vector3(0, 0, attackRotationZ - 90));
         return attackRotation;
     }
+
+
+    public void MoveAnimation()
+    {
+        if (Input.GetKey(KeyCode.W))
+        {
+            myAnimator.SetBool("MoveUp", true);
+            myAnimator.SetBool("MoveDown", false);
+            myAnimator.SetBool("MoveLeft", false);
+            myAnimator.SetBool("MoveRight", false);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            myAnimator.SetBool("MoveUp", false);
+            myAnimator.SetBool("MoveDown", true);
+            myAnimator.SetBool("MoveLeft", false);
+            myAnimator.SetBool("MoveRight", false);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            myAnimator.SetBool("MoveUp", false);
+            myAnimator.SetBool("MoveDown", false);
+            myAnimator.SetBool("MoveLeft", true);
+            myAnimator.SetBool("MoveRight", false);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            myAnimator.SetBool("MoveUp", false);
+            myAnimator.SetBool("MoveDown", false);
+            myAnimator.SetBool("MoveLeft", false);
+            myAnimator.SetBool("MoveRight", true);
+        }
+        else if (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.W))
+        {
+            myAnimator.SetBool("MoveUp", false);
+            myAnimator.SetBool("MoveDown", false);
+            myAnimator.SetBool("MoveLeft", false);
+            myAnimator.SetBool("MoveRight", false);
+        }
+    }
+        
 }
