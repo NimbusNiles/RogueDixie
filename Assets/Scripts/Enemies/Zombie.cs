@@ -7,10 +7,10 @@ public class Zombie : MonoBehaviour {
     public float damage;
 
     private float recoilSpeed = 2f;
-    private Player player;
+    private PlayerMovement player;
 
     private void Start() {
-        player = FindObjectOfType<Player>();
+        player = FindObjectOfType<PlayerMovement>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {

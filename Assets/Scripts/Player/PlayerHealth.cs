@@ -10,11 +10,11 @@ public class PlayerHealth : MonoBehaviour {
     public GameObject wastedScreen;
 
     private float currentHealth;
-    private Player player;
+    private PlayerMovement player;
 
     // Use this for initialization
     void Start () {
-        player = GetComponent<Player>();
+        player = GetComponent<PlayerMovement>();
         currentHealth = maxHealth;
 	}
 

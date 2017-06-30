@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour {
 
-    private Player player;
+    private PlayerMovement player;
 
     private float aggroRange;
     private float speed;
 
     private void Start()
     {
-        player = FindObjectOfType<Player>();
+        player = FindObjectOfType<PlayerMovement>();
         speed = 3f;
         aggroRange = 5f;
     }

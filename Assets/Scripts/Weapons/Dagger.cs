@@ -31,7 +31,7 @@ public class Dagger : MonoBehaviour, IWeapon {
     }
 
     public void OnHit(Collider2D collision) { 
-        Health health = collision.GetComponent<Health>();
+        EnemyHealth health = collision.GetComponent<EnemyHealth>();
         if (health) {
             health.DealDamage(damage);
         }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    private Player player;
+    private PlayerMovement player;
 
     //Ramon: Sprites for animation
     public Sprite frontside;
@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour {
 
 
     private void Start() {
-        player = FindObjectOfType<Player>();
+        player = FindObjectOfType<PlayerMovement>();
     }
 
     private void Update() {

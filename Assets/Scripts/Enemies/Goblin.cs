@@ -6,11 +6,11 @@ public class Goblin : MonoBehaviour {
 
     public float attackRange = 1f;
 
-    private Player player;
+    private PlayerMovement player;
 
 	// Use this for initialization
 	void Start () {
-        player = FindObjectOfType<Player>();
+        player = FindObjectOfType<PlayerMovement>();
 	}
 
     private void FixedUpdate() {
