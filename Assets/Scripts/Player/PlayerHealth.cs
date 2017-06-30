@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour {
 
     public float maxHealth;
     public Image HUDHealthBar;
+    public GameObject wastedScreen;
 
     private float currentHealth;
     private Player player;
@@ -27,6 +28,7 @@ public class PlayerHealth : MonoBehaviour {
     }
 
     void Die() {
-        player.canMove = false;
+        player.isDead = true;
+        wastedScreen.SetActive(true);
     }
 }

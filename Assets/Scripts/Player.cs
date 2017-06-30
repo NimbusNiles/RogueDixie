@@ -6,7 +6,7 @@ public class Player : MonoBehaviour {
 
     public float moveSpeed;
     [HideInInspector]
-    public bool canMove = true;
+    public bool isDead = false;
 
     private Rigidbody2D myRigidbody;
     private Camera myCamera;
@@ -17,7 +17,7 @@ public class Player : MonoBehaviour {
     }
 
     public void Move(Vector2 moveDirection) {
-        if (canMove) {
+        if (!isDead) {
             myRigidbody.velocity = moveDirection * moveSpeed;
         } else {
             myRigidbody.velocity = Vector2.zero;
@@ -25,11 +25,13 @@ public class Player : MonoBehaviour {
     }
 
     public void MainAttack() {
-        Vector2 attackDirection = GetAttackDirection();
-        Quaternion attackRotation = GetAttackRotation(attackDirection);
+        if (!isDead) {
+            Vector2 attackDirection = GetAttackDirection();
+            Quaternion attackRotation = GetAttackRotation(attackDirection);
 
-        // finding weapon by IWeapon, only works with a single weapon equipped.
-        GetComponentInChildren<IWeapon>().PerformAttack(attackDirection,attackRotation);
+            // finding weapon by IWeapon, only works with a single weapon equipped.
+            GetComponentInChildren<IWeapon>().PerformAttack(attackDirection, attackRotation);
+        }
     }
 
     Vector2 GetAttackDirection() {
