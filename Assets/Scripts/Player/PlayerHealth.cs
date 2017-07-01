@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour {
     void Start () {
         player = GetComponent<PlayerMovement>();
         HUDHealthBarImage = GameObject.Find("HealthFull").GetComponent<Image>();
-        wastedScreen = GameObject.Find("PlayerHUD").transform.Find("Wasted Screen").gameObject;
+        wastedScreen = FindObjectOfType<PlayerHUD>().transform.Find("Wasted Screen").gameObject;
         currentHealth = maxHealth;
 	}
 

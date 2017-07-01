@@ -51,3 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c688ae287b39243bc9829e860c2046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startClass: {fileID: 1674920384632168, guid: f0827dc51d697174aabdc31be3c09a88, type: 2}
+  startCamera: {fileID: 1061174764911980, guid: c3a6b49b635118c41803cfabdbd2555b,
+    type: 2}
+  startHUD: {fileID: 1085139977351398, guid: 3f9c616443641594f861b24ace8cf458, type: 2}

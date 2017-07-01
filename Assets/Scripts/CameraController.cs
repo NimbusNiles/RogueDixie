@@ -20,6 +20,7 @@ public class CameraController : MonoBehaviour {
     private float cameraSize;
 
     void Start () {
+        DontDestroyOnLoad(gameObject);
         player = FindObjectOfType<PlayerMovement>().gameObject;
         mapSize = FindObjectOfType<MapSize>().transform;
         thisCamera = GetComponent<Camera>();

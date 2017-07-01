@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour {
 
-    private LevelManager levelManager;
+    private EndGate endGate;
 
     private void Start() {
-        levelManager = GetComponent<LevelManager>();
+        endGate = FindObjectOfType<EndGate>();
     }
 
     private void Update() {
         if(transform.childCount <= 0) {
-            levelManager.LoadNextLevel();
+            endGate.Open();
         }
     }
 }

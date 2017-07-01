@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 114329387966601394}
   - component: {fileID: 114351313711746540}
   - component: {fileID: 225604355358020874}
+  - component: {fileID: 114558132482768056}
   m_Layer: 5
   m_Name: PlayerHUD
   m_TagString: Untagged
@@ -308,6 +309,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114558132482768056
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1085139977351398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f0fdff2f251a646a853c8eff47f3b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114559061312888416
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 11e8d454e4614de419c2e059f7c596d4
-timeCreated: 1498566218
+timeCreated: 1498896783
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -209,7 +209,7 @@ TextureImporter:
     21300404: roguelikeSheet_transparent_202
     21300406: roguelikeSheet_transparent_203
     21300408: roguelikeSheet_transparent_204
-    21300410: roguelikeSheet_transparent_205
+    21300410: Arched_Gate_Fenced_Closed
     21300412: roguelikeSheet_transparent_206
     21300414: roguelikeSheet_transparent_207
     21300416: roguelikeSheet_transparent_208
@@ -266,7 +266,7 @@ TextureImporter:
     21300518: roguelikeSheet_transparent_259
     21300520: roguelikeSheet_transparent_260
     21300522: roguelikeSheet_transparent_261
-    21300524: roguelikeSheet_transparent_262
+    21300524: Arched_Gate_Fenced_Open
     21300526: roguelikeSheet_transparent_263
     21300528: roguelikeSheet_transparent_264
     21300530: roguelikeSheet_transparent_265
@@ -4439,7 +4439,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_205
+      name: Arched_Gate_Fenced_Closed
       rect:
         serializedVersion: 2
         x: 578
@@ -5180,7 +5180,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_262
+      name: Arched_Gate_Fenced_Open
       rect:
         serializedVersion: 2
         x: 578
