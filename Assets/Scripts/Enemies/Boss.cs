@@ -5,14 +5,21 @@ using UnityEngine;
 public class Boss : MonoBehaviour {
 
     private EndGate endGate;
+    private TimeKeeper timeKeeper;
 
     private void Start() {
         endGate = FindObjectOfType<EndGate>();
+        timeKeeper = FindObjectOfType<TimeKeeper>();
     }
 
     private void Update() {
         if(transform.childCount <= 0) {
-            endGate.Open();
+            BossDefeated();
         }
+    }
+
+    void BossDefeated() {
+        endGate.Open();
+        timeKeeper.StopTicking();
     }
 }
