@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Warrior : MonoBehaviour {
 
@@ -15,7 +16,6 @@ public class Warrior : MonoBehaviour {
 
     private void Start() {
         DontDestroyOnLoad(gameObject);
-        HUDRageBarImage = GameObject.Find("ResourceFull").GetComponent<Image>();
     }
 
     public void AddRage(float amount) {
@@ -39,5 +39,18 @@ public class Warrior : MonoBehaviour {
 
     void UpdateRageBar() {
         HUDRageBarImage.fillAmount = currentRage / maxRage;
+    }
+
+    private void OnEnable() {
+        SceneManager.sceneLoaded += FindObjects;
+    }
+
+    private void OnDisable() {
+        SceneManager.sceneLoaded -= FindObjects;
+    }
+
+    void FindObjects(Scene scene, LoadSceneMode mode) {
+        HUDRageBarImage = GameObject.Find("ResourceFull").GetComponent<Image>();
+        UpdateRageBar();
     }
 }
