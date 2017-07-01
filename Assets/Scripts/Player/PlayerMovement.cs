@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -15,7 +16,6 @@ public class PlayerMovement : MonoBehaviour {
 
     private void Start() {
         myRigidbody = GetComponent<Rigidbody2D>();
-        myCamera = FindObjectOfType<Camera>();
         myAnimator = GetComponentInChildren<Animator>();
     }
 
@@ -97,5 +97,16 @@ public class PlayerMovement : MonoBehaviour {
             myAnimator.SetBool("MoveRight", false);
         }
     }
-        
+
+    private void OnEnable() {
+        SceneManager.sceneLoaded += FindObjects;
+    }
+
+    private void OnDisable() {
+        SceneManager.sceneLoaded -= FindObjects;
+    }
+
+    void FindObjects(Scene scene, LoadSceneMode mode) {
+        myCamera = FindObjectOfType<Camera>();
+    }
 }

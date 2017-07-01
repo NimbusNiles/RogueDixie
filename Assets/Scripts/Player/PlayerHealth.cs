@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour {
 
@@ -15,22 +16,39 @@ public class PlayerHealth : MonoBehaviour {
     // Use this for initialization
     void Start () {
         player = GetComponent<PlayerMovement>();
-        HUDHealthBarImage = GameObject.Find("HealthFull").GetComponent<Image>();
-        wastedScreen = FindObjectOfType<PlayerHUD>().transform.Find("Wasted Screen").gameObject;
         currentHealth = maxHealth;
+        UpdateHealthBar();
 	}
 
     public void DealDamage(float damage) {
         currentHealth -= damage;
-        HUDHealthBarImage.fillAmount = currentHealth/maxHealth;
+        UpdateHealthBar();
 
         if (currentHealth <= 0) {
             Die();
         }
     }
 
+    void UpdateHealthBar() {
+        HUDHealthBarImage.fillAmount = currentHealth / maxHealth;
+    }
+
     void Die() {
         player.isDead = true;
         wastedScreen.SetActive(true);
+    }
+
+    private void OnEnable() {
+        SceneManager.sceneLoaded += FindObjects;
+    }
+
+    private void OnDisable() {
+        SceneManager.sceneLoaded -= FindObjects;
+    }
+
+    void FindObjects(Scene scene, LoadSceneMode mode) {
+        HUDHealthBarImage = GameObject.Find("HealthFull").GetComponent<Image>();
+        wastedScreen = FindObjectOfType<PlayerHUD>().transform.Find("Wasted Screen").gameObject;
+        UpdateHealthBar();
     }
 }

@@ -50,6 +50,7 @@ public class TimeKeeper : MonoBehaviour {
             isTicking = true;
             text.color = Color.red;
         }
+        UpdateTimeDisplay();
     }
 
     public void StopTicking() {

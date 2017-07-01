@@ -12,15 +12,6 @@ public class LevelManager : MonoBehaviour {
     private GameObject player;
 
     public void Awake() {
-        // Check for camera
-        if (!FindObjectOfType<Camera>()) {
-            SpawnCamera();
-        }
-
-        // Check for player HUD
-        if (!FindObjectOfType<PlayerHUD>()) {
-            SpawnHUD();
-        }
 
         // Check for player
         if (!FindObjectOfType<PlayerHealth>()) {
@@ -50,13 +41,5 @@ public class LevelManager : MonoBehaviour {
 
     GameObject SpawnPlayer() {
         return Instantiate(startClass);
-    }
-
-    void SpawnCamera() {
-        Instantiate(startCamera);
-    }
-
-    void SpawnHUD() {
-        Instantiate(startHUD);
     }
 }
