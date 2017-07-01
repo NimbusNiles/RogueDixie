@@ -23,6 +23,7 @@ public class EnemyHealth : MonoBehaviour {
 
         if (health <= 0)
         {
+            GetComponentInParent<DropCoins>().Drop();
             Destroy(gameObject);
         }
     }

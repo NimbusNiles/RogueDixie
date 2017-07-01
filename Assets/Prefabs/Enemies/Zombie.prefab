@@ -71,6 +71,7 @@ GameObject:
   - component: {fileID: 114796277525092316}
   - component: {fileID: 114366213818763966}
   - component: {fileID: 114470497364809402}
+  - component: {fileID: 114507251423719156}
   m_Layer: 9
   m_Name: Zombie
   m_TagString: Untagged
@@ -333,6 +334,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
+--- !u!114 &114507251423719156
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1667838692370584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda20d7b01730cb42882a264645ba93e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinPrefab: {fileID: 1990839451583168, guid: 11f2df78f8d21284591847dce2901ce4, type: 2}
 --- !u!114 &114678993741762090
 MonoBehaviour:
   m_ObjectHideFlags: 1
