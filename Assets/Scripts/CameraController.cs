@@ -45,8 +45,8 @@ public class CameraController : MonoBehaviour {
         camClampMaxX = mapPosition.x + .5f * mapScale.x - cameraSize * cameraAspect;
 
         camClamp = (player.transform.position + offset);
-        camClamp.x = (int)(Mathf.Clamp(camClamp.x, camClampMinX, camClampMaxX) / 0.03125f) * 0.03125f + 0.015625f;  //Round to nearest 1/32th, add 1/64th
-        camClamp.y = (int)(Mathf.Clamp(camClamp.y, camClampMinY, camClampMaxY) / 0.03125f) * 0.03125f + 0.015625f;  //Round to nearest 1/32th, add 1/64th
+        camClamp.x = Mathf.Clamp(camClamp.x, camClampMinX, camClampMaxX);
+        camClamp.y = Mathf.Clamp(camClamp.y, camClampMinY, camClampMaxY);
         transform.position = camClamp;
     }
 }
