@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 11e8d454e4614de419c2e059f7c596d4
-timeCreated: 1498896783
+timeCreated: 1498911514
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -601,7 +601,7 @@ TextureImporter:
     21301188: roguelikeSheet_transparent_594
     21301190: roguelikeSheet_transparent_595
     21301192: roguelikeSheet_transparent_596
-    21301194: roguelikeSheet_transparent_597
+    21301194: GoldCoins
     21301196: roguelikeSheet_transparent_598
     21301198: roguelikeSheet_transparent_599
     21301200: roguelikeSheet_transparent_600
@@ -9535,7 +9535,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_597
+      name: GoldCoins
       rect:
         serializedVersion: 2
         x: 765
