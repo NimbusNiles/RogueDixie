@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerWeaponController : MonoBehaviour {
     public GameObject mainWeaponSlot;
-    public GameObject EquippedWeapon { get; set; }
+    public GameObject EquippedWeaponObj { get; set; }
+    public Item EquippedWeaponItem { get; set; }
 
     private Camera myCamera;
     private Player player;
@@ -15,13 +16,15 @@ public class PlayerWeaponController : MonoBehaviour {
     }
 
     public void EquipWeapon(Item weaponToEquip) {
-        if (EquippedWeapon != null) {
+        if (EquippedWeaponObj != null) {
             Destroy(mainWeaponSlot.transform.GetChild(0).gameObject);
+            EquippedWeaponItem = null;
         }
-        EquippedWeapon = Instantiate(Resources.Load<GameObject>("Weapons/" + weaponToEquip.ObjectSlug),
+        EquippedWeaponItem = weaponToEquip;
+        EquippedWeaponObj = Instantiate(Resources.Load<GameObject>("Weapons/" + weaponToEquip.ObjectSlug),
             mainWeaponSlot.transform.position, Quaternion.identity);
-        EquippedWeapon.transform.SetParent(mainWeaponSlot.transform);
-        EquippedWeapon.name = weaponToEquip.ItemName;
+        EquippedWeaponObj.transform.SetParent(mainWeaponSlot.transform);
+        EquippedWeaponObj.name = weaponToEquip.ItemName;
     }
 
     public void MainAttack() {
