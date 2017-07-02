@@ -21,6 +21,7 @@ public class PlayerWeaponController : MonoBehaviour {
         EquippedWeapon = Instantiate(Resources.Load<GameObject>("Weapons/" + weaponToEquip.ObjectSlug),
             mainWeaponSlot.transform.position, Quaternion.identity);
         EquippedWeapon.transform.SetParent(mainWeaponSlot.transform);
+        EquippedWeapon.name = weaponToEquip.ItemName;
     }
 
     public void MainAttack() {

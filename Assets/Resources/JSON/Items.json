@@ -1,0 +1,18 @@
+[
+	{
+		"objectSlug": "dagger_wood",
+		"itemName": "Wooden Dagger",
+		"description": "A simple, sharp dagger.",
+		"itemType": "Weapon_Melee",
+		"levelReq": 0,
+		"APS": 1.2
+	},
+	{
+		"objectSlug": "dagger_steel",
+		"itemName": "Steel Dagger",
+		"description": "A fantastic steel dagger.",
+		"itemType": "Weapon_Melee",
+		"levelReq": 0,
+		"APS": 1.2
+	}
+]

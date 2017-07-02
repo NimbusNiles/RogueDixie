@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 114067244021156842}
   - component: {fileID: 114667125486848046}
   - component: {fileID: 114721888124333008}
+  - component: {fileID: 114775865675934618}
   m_Layer: 8
   m_Name: Warrior
   m_TagString: Player
@@ -275,6 +276,7 @@ MonoBehaviour:
   maxRage: 100
   rageCooldown: 2
   rageDegen: 10
+  startingWeapon: Wooden Dagger
 --- !u!114 &114311820449636714
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -322,6 +324,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 500
+--- !u!114 &114775865675934618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1452605282235324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4d51a67115dcab48bc0bdd6aecdf92d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212352289143073798
 SpriteRenderer:
   m_ObjectHideFlags: 1

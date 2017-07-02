@@ -9,6 +9,7 @@ public class Warrior : MonoBehaviour {
     public float maxRage;
     public float rageCooldown;
     public float rageDegen;
+    public string startingWeapon;
 
     private float currentRage = 0f;
     private float rageCooldownTimer;
@@ -16,6 +17,8 @@ public class Warrior : MonoBehaviour {
 
     private void Start() {
         DontDestroyOnLoad(gameObject);
+        
+        GetComponent<InventoryController>().GiveItem(startingWeapon);
     }
 
     public void AddRage(float amount) {

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 456435d7777f27d43932bc7aa26db7bd
-timeCreated: 1498498723
+timeCreated: 1498998757
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -364,7 +364,7 @@ TextureImporter:
     21300714: roguelikeChar_transparent_357
     21300716: Dagger_Wood
     21300718: roguelikeChar_transparent_359
-    21300720: roguelikeChar_transparent_360
+    21300720: Dagger_Steel
     21300722: roguelikeChar_transparent_361
     21300724: roguelikeChar_transparent_362
     21300726: roguelikeChar_transparent_363
@@ -5199,7 +5199,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: roguelikeChar_transparent_360
+      name: Dagger_Steel
       rect:
         serializedVersion: 2
         x: 748
@@ -6351,7 +6351,7 @@ TextureImporter:
         width: 67
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

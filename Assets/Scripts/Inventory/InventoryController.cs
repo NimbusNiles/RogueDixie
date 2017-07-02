@@ -3,18 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class InventoryController : MonoBehaviour {
-    public Item sword;
-
-    private PlayerWeaponController playerWeaponController;
+    public static InventoryController Instance { get; set; }
+    public List<Item> playerItems = new List<Item>();
 
     private void Start() {
-        playerWeaponController = FindObjectOfType<PlayerWeaponController>();
-        sword = new Item("dagger_wood");
-    }
-
-    private void Update() {
-        if (Input.GetKeyDown(KeyCode.V)) {
-            playerWeaponController.EquipWeapon(sword);
+        if (Instance != null && Instance != this) {
+            Destroy(gameObject);
+        } else {
+            Instance = this;
         }
     }
+    
+    public void GiveItem(string itemName) {
+        Item item = ItemDatabase.Instance.GetItem(itemName);
+        playerItems.Add(item);
+
+        switch (item.ItemType) {
+            case Item.ItemTypes.Weapon_Melee:
+                EquipWeapon(item);
+                break;
+        }
+    }
+
+    public void EquipWeapon(Item weaponToEquip) {
+        GetComponent<PlayerWeaponController>().EquipWeapon(weaponToEquip);
+    }
+
 }
