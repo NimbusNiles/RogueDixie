@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour {
@@ -10,6 +11,7 @@ public class CameraController : MonoBehaviour {
     private Vector3 mapScale;
     private Vector3 offset;
     private Vector3 camClamp;
+    private Vector3 velocity;
 
     private float camClampMinX;
     private float camClampMinY;
@@ -18,6 +20,8 @@ public class CameraController : MonoBehaviour {
 
     private float cameraAspect;
     private float cameraSize;
+
+    private float smoothness;
 
     void Start () {
         player = FindObjectOfType<PlayerMovement>().gameObject;
@@ -35,18 +39,26 @@ public class CameraController : MonoBehaviour {
         camClampMaxY = mapPosition.y + .5f * mapScale.y - cameraSize;
 
         offset.z = -10f;
+        velocity = Vector3.zero;
+        smoothness = 0.09f;                                     //Approximate time camera will take to reach the target. A smaller value will reach the target faster
     }
 	
-	void LateUpdate () {
+	void FixedUpdate () {
+        GetAspect();
+        ClampPosition();
+        transform.position = Vector3.SmoothDamp(transform.position, camClamp, ref velocity, smoothness);
+    }
+
+    void GetAspect() {
         thisCamera.ResetAspect();
         cameraAspect = thisCamera.aspect;
-
         camClampMinX = mapPosition.x - .5f * mapScale.x + cameraSize * cameraAspect;
         camClampMaxX = mapPosition.x + .5f * mapScale.x - cameraSize * cameraAspect;
+    }
 
-        camClamp = (player.transform.position + offset);
+    void ClampPosition() {
+        camClamp = player.transform.position + offset;
         camClamp.x = Mathf.Clamp(camClamp.x, camClampMinX, camClampMaxX);
         camClamp.y = Mathf.Clamp(camClamp.y, camClampMinY, camClampMaxY);
-        transform.position = camClamp;
     }
 }
