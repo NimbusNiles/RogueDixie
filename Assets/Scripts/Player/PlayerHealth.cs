@@ -10,12 +10,12 @@ public class PlayerHealth : MonoBehaviour {
 
     private GameObject wastedScreen;
     private float currentHealth;
-    private PlayerMovement player;
+    private Player player;
     private Image HUDHealthBarImage;
 
     // Use this for initialization
     void Start () {
-        player = GetComponent<PlayerMovement>();
+        player = GetComponent<Player>();
         currentHealth = maxHealth;
         UpdateHealthBar();
 	}
@@ -34,7 +34,7 @@ public class PlayerHealth : MonoBehaviour {
     }
 
     void Die() {
-        player.isDead = true;
+        player.IsDead = true;
         wastedScreen.SetActive(true);
     }
 

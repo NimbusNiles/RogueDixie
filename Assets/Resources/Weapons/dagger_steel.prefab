@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 95329197082764716}
   - component: {fileID: 114692106048482020}
   m_Layer: 8
-  m_Name: Wooden Dagger
+  m_Name: dagger_steel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca71993723c040241904c340646ade1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 50
   attackOffset: 0.1
   rageAmount: 10
 --- !u!114 &114777139386184356
@@ -264,7 +264,7 @@ SpriteRenderer:
   m_SortingLayerID: -1123368419
   m_SortingLayer: 2
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300716, guid: 456435d7777f27d43932bc7aa26db7bd, type: 3}
+  m_Sprite: {fileID: 21300720, guid: 456435d7777f27d43932bc7aa26db7bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

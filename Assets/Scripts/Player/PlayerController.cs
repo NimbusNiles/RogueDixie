@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    private PlayerMovement player;
+    private PlayerMovement playerMovement;
+    private PlayerWeaponController playerWeaponController;
 
     private void Start() {
-        player = FindObjectOfType<PlayerMovement>();
+        playerMovement = FindObjectOfType<PlayerMovement>();
+        playerWeaponController = FindObjectOfType<PlayerWeaponController>();
     }
 
     private void Update() {
         // Attack
         if (Input.GetMouseButton(0)) {
-            player.MainAttack();
-        }else if (Input.GetMouseButtonUp(0)) {
-           // player.StopAttack();
+            playerWeaponController.MainAttack();
         }
     }
 
@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour {
     {
         // Movement
         Vector2 moveDirection = GetMoveDirection();
-        player.Move(moveDirection);
+        playerMovement.Move(moveDirection);
     }
 
     Vector2 GetMoveDirection() {
