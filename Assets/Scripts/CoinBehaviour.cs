@@ -19,7 +19,7 @@ public class CoinBehaviour : MonoBehaviour {
         if (collision.gameObject.tag == "Player") {
             PlayerLoot.coinAmount += value;
             Debug.Log(PlayerLoot.coinAmount);
-            Destroy(this.gameObject);
+            Destroy(this.gameObject, 0.1f);
         } else if (collision.gameObject.name == "Coin Magnet") {
             magnetized = true;
         }
@@ -36,7 +36,7 @@ public class CoinBehaviour : MonoBehaviour {
             Vector2 posDelta = player.transform.position - transform.position;
             float distanceToPlayer = posDelta.magnitude;
             Vector2 directionToPlayer = posDelta.normalized;
-            Vector2 velocity = directionToPlayer * speed / distanceToPlayer;
+            Vector2 velocity = directionToPlayer * Mathf.Clamp(speed / distanceToPlayer,0,15);
             transform.Translate(velocity * Time.fixedDeltaTime);
         }
     }
