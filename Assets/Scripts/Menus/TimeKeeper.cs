@@ -39,7 +39,11 @@ public class TimeKeeper : MonoBehaviour {
         string minutes = Mathf.Floor(totalTimeElapsed / 60).ToString("00");
         string seconds = (totalTimeElapsed % 60).ToString("00");
 
-        text.text = (minutes + ":" + seconds);
+        //text.text = (minutes + ":" + seconds);
+        text.text = string.Format("{0:00}:{1:00}.{2:00}",
+                     Mathf.Floor(totalTimeElapsed / 60),//minutes
+                     Mathf.Floor(totalTimeElapsed) % 60,//seconds
+                     Mathf.Floor((totalTimeElapsed * 100) % 100));//miliseconds
     }
 
     public void StartTicking(Scene scene, LoadSceneMode mode) {
