@@ -1,12 +1,12 @@
 fileFormatVersion: 2
 guid: 11e79094faf6742489c9709dff43e215
-timeCreated: 1499026414
+timeCreated: 1499109774
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Player Character Sprite Sheet_0
-    21300002: Player Character Sprite Sheet_1
-    21300004: Player Character Sprite Sheet_2
+    21300000: Player_Warrior
+    21300002: Player_Ranger
+    21300004: Player_Mage
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -38,12 +38,12 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 25
+  spritePixelsToUnits: 48
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -56,7 +56,7 @@ TextureImporter:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -64,7 +64,7 @@ TextureImporter:
   - buildTarget: Standalone
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -72,7 +72,7 @@ TextureImporter:
   - buildTarget: WebGL
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -81,11 +81,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player Character Sprite Sheet_0
+      name: Player_Warrior
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2
+        x: 0
+        y: 0
         width: 60
         height: 60
       alignment: 0
@@ -94,11 +94,11 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Player Character Sprite Sheet_1
+      name: Player_Ranger
       rect:
         serializedVersion: 2
-        x: 65
-        y: 2
+        x: 63
+        y: 0
         width: 38
         height: 60
       alignment: 0
@@ -107,11 +107,11 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Player Character Sprite Sheet_2
+      name: Player_Mage
       rect:
         serializedVersion: 2
-        x: 107
-        y: 2
+        x: 105
+        y: 0
         width: 40
         height: 54
       alignment: 0
