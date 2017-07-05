@@ -10,11 +10,13 @@ public class NewMapGenerator : MonoBehaviour {
 
     public string seed;
     public bool useRandomSeed = true;
+    public int smoothIterations;
 
     [Range(0, 100)]
     public int randomFillPercent;
     
     private int[,] map;
+    private int[,] tempMap;
     private int width;
     private int height;
 
@@ -50,11 +52,24 @@ public class NewMapGenerator : MonoBehaviour {
         }
 	}
 
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            Destroy(mapTiles);
+
+            mapTiles = new GameObject("MapTiles");
+            mapTiles.transform.parent = GameObject.Find("Map").gameObject.transform;
+
+            GenerateMap();
+            InstantiateTiles();
+        }
+    }
+
     void GenerateMap() {
         map = new int[width, height];
         RandomFillMap();                                                                        //Map array is filled with 0's, 1's and 2's
 
-        for (int i = 0; i < 4; i++) {                                       
+        for (int i = 0; i < smoothIterations; i++) {
+            tempMap = new int[width, height];
             SmoothMap();                                                                        //Map array's values are smoothed to nearest neighbours
         }
     }
@@ -69,7 +84,7 @@ public class NewMapGenerator : MonoBehaviour {
         for (int x = 0; x < width; x++) {
             for (int y = 0; y < height; y++) {
                 if (x == 0 || x == width - 1 || y == 0 || y == height - 1) {
-                    map[x, y] = 2;                                                              //Creates (lava) border
+                    map[x, y] = 0;                                                              //Creates (lava) border
                 } else {
                     map[x, y] = (pseudoRandom.Next(0, 100) < randomFillPercent) ? 1 : 0;
                 }
@@ -82,14 +97,17 @@ public class NewMapGenerator : MonoBehaviour {
             for (int y = 0; y < height; y++) {
                 int neighbourWallTiles = GetSurroundingWallCount(x, y);
                 if (map[x, y] == 2) {
-                    continue;
+                    tempMap[x, y] = 2;
                 } else if (neighbourWallTiles > 4) {
-                    map[x, y] = 1;
+                    tempMap[x, y] = 1;
                 } else if (neighbourWallTiles < 4) {
-                    map[x, y] = 0;
+                    tempMap[x, y] = 0;
                 }
             }
         }
+
+        map = tempMap;
+
     }
 
     int GetSurroundingWallCount(int gridX, int gridY) {

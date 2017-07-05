@@ -1052,6 +1052,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 20575065425705266, guid: c3a6b49b635118c41803cfabdbd2555b,
+        type: 2}
+      propertyPath: orthographic size
+      value: 19.78
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c3a6b49b635118c41803cfabdbd2555b, type: 2}
   m_IsPrefabParent: 0
@@ -1198,7 +1203,8 @@ MonoBehaviour:
   wallTile: {fileID: 1983402109256326, guid: 12f7be7637d447241bac0ee55da1cbdd, type: 2}
   seed: 
   useRandomSeed: 1
-  randomFillPercent: 25
+  smoothIterations: 8
+  randomFillPercent: 55
 --- !u!1001 &1984741745
 Prefab:
   m_ObjectHideFlags: 0
