@@ -8,15 +8,10 @@ public class PlayerWeaponController : MonoBehaviour {
     public GameObject EquippedWeaponObj { get; set; }
     public Item EquippedWeaponItem { get; set; }
     
-    private Player player;
     private bool canAttack = true;
 
     private void OnEnable() {
         PlayerHealth.OnPlayerDeath += (() => canAttack = false);
-    }
-
-    private void Start() {
-        player = GetComponent<Player>();
     }
 
     public void EquipWeapon(Item weaponToEquip) {
