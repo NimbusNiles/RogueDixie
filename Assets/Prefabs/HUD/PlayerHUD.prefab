@@ -402,6 +402,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0f0fdff2f251a646a853c8eff47f3b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wastedScreen: {fileID: 1951966819736198}
+  resourceBarObj: {fileID: 1561044636001486}
 --- !u!114 &114559061312888416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -872,10 +874,10 @@ RectTransform:
   m_Father: {fileID: 224048364804565916}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1128, y: 524}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224785466098328840
 RectTransform:
