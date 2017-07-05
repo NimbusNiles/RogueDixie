@@ -5,27 +5,31 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
     public float moveSpeed;
-    [HideInInspector]
 
     private Animator myAnimator;
     private Rigidbody2D myRigidbody;
-    private Player player;
+    private bool canMove = true;
+
+    private void OnEnable() {
+        PlayerHealth.OnPlayerDeath += (() => canMove = false);
+    }
 
     private void Start() {
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponentInChildren<Animator>();
-        player = GetComponent<Player>();
     }
 
     private void Update()
     {
-        if (!player.IsDead) {
+        if (canMove) {
             MoveAnimation();
+        } else {
+            StopMovementAnimation();
         }
     }
 
     public void Move(Vector2 moveDirection) {
-        if (!player.IsDead) {
+        if (canMove) {
             myRigidbody.velocity = moveDirection * moveSpeed;
         } else {
             myRigidbody.velocity = Vector2.zero;
@@ -64,12 +68,15 @@ public class PlayerMovement : MonoBehaviour {
         }
         else if (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.W))
         {
-            myAnimator.SetBool("MoveUp", false);
-            myAnimator.SetBool("MoveDown", false);
-            myAnimator.SetBool("MoveLeft", false);
-            myAnimator.SetBool("MoveRight", false);
+            StopMovementAnimation();
         }
     }
 
+    void StopMovementAnimation() {
+        myAnimator.SetBool("MoveUp", false);
+        myAnimator.SetBool("MoveDown", false);
+        myAnimator.SetBool("MoveLeft", false);
+        myAnimator.SetBool("MoveRight", false);
+    }
     
 }

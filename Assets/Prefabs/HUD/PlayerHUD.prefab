@@ -402,6 +402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0f0fdff2f251a646a853c8eff47f3b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wastedScreen: {fileID: 1951966819736198}
 --- !u!114 &114559061312888416
 MonoBehaviour:
   m_ObjectHideFlags: 1

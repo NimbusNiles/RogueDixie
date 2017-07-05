@@ -7,9 +7,13 @@ public class PlayerWeaponController : MonoBehaviour {
     public GameObject mainWeaponSlot;
     public GameObject EquippedWeaponObj { get; set; }
     public Item EquippedWeaponItem { get; set; }
-
-    private Camera myCamera;
+    
     private Player player;
+    private bool canAttack = true;
+
+    private void OnEnable() {
+        PlayerHealth.OnPlayerDeath += (() => canAttack = false);
+    }
 
     private void Start() {
         player = GetComponent<Player>();
@@ -28,7 +32,7 @@ public class PlayerWeaponController : MonoBehaviour {
     }
 
     public void MainAttack() {
-        if (!player.IsDead) {
+        if (canAttack) {
             Vector2 attackDirection = GetAttackDirection();
             Quaternion attackRotation = GetAttackRotation(attackDirection);
 
@@ -38,7 +42,7 @@ public class PlayerWeaponController : MonoBehaviour {
     }
 
     Vector2 GetAttackDirection() {
-        Vector2 mousePositionInWorld = myCamera.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 mousePositionInWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 playerPosition = new Vector2(transform.position.x, transform.position.y);
         Vector2 attackDirection = (mousePositionInWorld - playerPosition).normalized;
         return attackDirection;
@@ -49,16 +53,5 @@ public class PlayerWeaponController : MonoBehaviour {
         Quaternion attackRotation = Quaternion.Euler(new Vector3(0, 0, attackRotationZ - 90));
         return attackRotation;
     }
-
-    private void OnEnable() {
-        SceneManager.sceneLoaded += FindObjects;
-    }
-
-    private void OnDisable() {
-        SceneManager.sceneLoaded -= FindObjects;
-    }
-
-    void FindObjects(Scene scene, LoadSceneMode mode) {
-        myCamera = FindObjectOfType<Camera>();
-    }
+    
 }
