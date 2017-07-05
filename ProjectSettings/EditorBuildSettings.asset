@@ -16,7 +16,7 @@ EditorBuildSettings:
     guid: 954b661cc43cab74988418b1ef5d123d
   - enabled: 1
     path: Assets/_Scenes/01a_Level.unity
-    guid: b8a8fb2abbc50894bb2fa49ade714cb8
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/_Scenes/01b_Town.unity
     guid: a02df29f45597b8419b506623b074f78
@@ -28,13 +28,13 @@ EditorBuildSettings:
     guid: 39922abeadef73644b28ccd9dc579eca
   - enabled: 1
     path: Assets/_Scenes/Level_Management/02lvl.unity
-    guid: d7d1e15608c931741aff1b7c29a674d0
+    guid: 47e8691bc813b2d4b9fb7e711b6792b4
   - enabled: 1
     path: Assets/_Scenes/Level_Management/02twn.unity
     guid: 911542b5e3c681943aaa6b883d1e033d
   - enabled: 1
     path: Assets/_Scenes/Level_Management/03lvl.unity
-    guid: e951932ddcdadd4408fb216640ab96f9
+    guid: 612277392acb10841b6812fe66a7649f
   - enabled: 1
     path: Assets/_Scenes/Level_Management/03twn.unity
     guid: b9613e0b52bf31c4d9fb17aca43a1f3b
