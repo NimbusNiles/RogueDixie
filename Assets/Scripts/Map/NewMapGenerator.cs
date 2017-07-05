@@ -14,6 +14,7 @@ public class NewMapGenerator : MonoBehaviour {
 
     [Range(0, 100)]
     public int randomFillPercent;
+    public int borderSize;
     
     private int[,] map;
     private int[,] tempMap;
@@ -83,10 +84,18 @@ public class NewMapGenerator : MonoBehaviour {
 
         for (int x = 0; x < width; x++) {
             for (int y = 0; y < height; y++) {
+
+                int distanceToEdgeX = Mathf.Min(x, width - x);
+                int distanceToEdgeY = Mathf.Min(y, height - y);
+
+                float distanceToEdge = (float)Mathf.Min(distanceToEdgeX, distanceToEdgeY) / (float)borderSize;
+
+                float checkPercent = Mathf.Lerp(0, randomFillPercent, distanceToEdge);
+
                 if (x == 0 || x == width - 1 || y == 0 || y == height - 1) {
                     map[x, y] = 0;                                                              //Creates (lava) border
                 } else {
-                    map[x, y] = (pseudoRandom.Next(0, 100) < randomFillPercent) ? 1 : 0;
+                    map[x, y] = (pseudoRandom.Next(0, 100) < checkPercent) ? 1 : 0;
                 }
             }
         }
