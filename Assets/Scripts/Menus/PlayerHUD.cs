@@ -23,7 +23,7 @@ public class PlayerHUD : MonoBehaviour {
         PlayerResource.OnResourceChange -= UpdateResourceBar;
     }
 
-    private void Start() {
+    private void Awake() {
         healthBar = GetComponentInChildren<Healthbar>();
         resourceBar = resourceBarObj.GetComponentInChildren<Healthbar>();
         SetResourceColor();
