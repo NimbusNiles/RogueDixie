@@ -19,7 +19,7 @@ public class CoinBehaviour : MonoBehaviour {
         if (collision.gameObject.tag == "Player") {
             PlayerLoot.coinAmount += value;
             Debug.Log(PlayerLoot.coinAmount);
-            Destroy(this.gameObject, 0.1f);
+            gameObject.SetActive(false);
         } else if (collision.gameObject.name == "Coin Magnet") {
             magnetized = true;
         }
