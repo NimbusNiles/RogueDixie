@@ -102,14 +102,14 @@ public class NewMapGenerator : MonoBehaviour {
     }
 
     void SmoothMap() {
-        for (int x = 0; x < width; x++) {
-            for (int y = 0; y < height; y++) {
+        for (int x = 1; x < width -1; x++) {
+            for (int y = 1; y < height -1; y++) {
                 int neighbourWallTiles = GetSurroundingWallCount(x, y);
                 if (map[x, y] == 2) {
                     tempMap[x, y] = 2;
-                } else if (neighbourWallTiles > 4) {
+                } else if (neighbourWallTiles > 3) {
                     tempMap[x, y] = 1;
-                } else if (neighbourWallTiles < 4) {
+                } else if (neighbourWallTiles < 3) {
                     tempMap[x, y] = 0;
                 }
             }

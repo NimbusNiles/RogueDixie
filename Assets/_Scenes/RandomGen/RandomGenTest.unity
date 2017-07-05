@@ -821,7 +821,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4755198964753264, guid: 8727f3f3d9052ee4ab5ab051dd32ca25, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4755198964753264, guid: 8727f3f3d9052ee4ab5ab051dd32ca25, type: 2}
       propertyPath: m_LocalPosition.z
@@ -850,6 +850,14 @@ Prefab:
     - target: {fileID: 1053568017122654, guid: 8727f3f3d9052ee4ab5ab051dd32ca25, type: 2}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4755198964753264, guid: 8727f3f3d9052ee4ab5ab051dd32ca25, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4755198964753264, guid: 8727f3f3d9052ee4ab5ab051dd32ca25, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8727f3f3d9052ee4ab5ab051dd32ca25, type: 2}
@@ -1205,6 +1213,7 @@ MonoBehaviour:
   useRandomSeed: 1
   smoothIterations: 8
   randomFillPercent: 55
+  borderSize: 0
 --- !u!1001 &1984741745
 Prefab:
   m_ObjectHideFlags: 0
