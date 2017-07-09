@@ -1190,30 +1190,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1957997647 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1787423356001860, guid: 3893ccde3e0a5bf4b880b970e5382654,
-    type: 2}
-  m_PrefabInternal: {fileID: 1984741745}
---- !u!114 &1957997648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1957997647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6c7d91c38590954bb359ee484c828bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  floorTile: {fileID: 1283778784878910, guid: ec730077ac254ed4484d1cf91293a64a, type: 2}
-  floorTile2: {fileID: 1983402109256326, guid: 52d15cf015868be4b8456345bcf5bab9, type: 2}
-  wallTile: {fileID: 1983402109256326, guid: 12f7be7637d447241bac0ee55da1cbdd, type: 2}
-  seed: 
-  useRandomSeed: 1
-  smoothIterations: 4
-  randomFillPercent: 50
-  borderSize: 5
 --- !u!1001 &1984741745
 Prefab:
   m_ObjectHideFlags: 0
@@ -1253,12 +1229,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1787423356001860, guid: 3893ccde3e0a5bf4b880b970e5382654, type: 2}
-      propertyPath: m_Layer
-      value: 13
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114017454992733680, guid: 3893ccde3e0a5bf4b880b970e5382654, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3893ccde3e0a5bf4b880b970e5382654, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &2036671695

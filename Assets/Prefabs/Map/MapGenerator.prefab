@@ -19,8 +19,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4934723246181950}
-  - component: {fileID: 114017454992733680}
-  m_Layer: 0
+  - component: {fileID: 114690964362597068}
+  m_Layer: 13
   m_Name: MapGenerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114017454992733680
+--- !u!114 &114690964362597068
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -48,12 +48,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1787423356001860}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa111ed7d3e2f9b4cad575e84d79d2e8, type: 3}
+  m_Script: {fileID: 11500000, guid: e6c7d91c38590954bb359ee484c828bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floorTile: {fileID: 1283778784878910, guid: ec730077ac254ed4484d1cf91293a64a, type: 2}
+  floorTile: {fileID: 1491872798431194, guid: 068ccaf385fc3eb4482ecd9af8f1a5e3, type: 2}
+  floorTile2: {fileID: 1983402109256326, guid: 52d15cf015868be4b8456345bcf5bab9, type: 2}
+  floorTile3: {fileID: 1283778784878910, guid: ec730077ac254ed4484d1cf91293a64a, type: 2}
   wallTile: {fileID: 1983402109256326, guid: 12f7be7637d447241bac0ee55da1cbdd, type: 2}
-  xMin: 0
-  xMax: 0
-  yMin: 0
-  yMax: 0
+  seed: 
+  useRandomSeed: 1
+  smoothIterations: 4
+  randomFillPercent: 50
+  borderSize: 5
+  erosionSize: 2

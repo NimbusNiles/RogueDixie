@@ -1,10 +1,10 @@
 fileFormatVersion: 2
 guid: 11e8d454e4614de419c2e059f7c596d4
-timeCreated: 1498911514
+timeCreated: 1499591309
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: roguelikeSheet_transparent_0
+    21300000: Water_Tile_1
     21300002: roguelikeSheet_transparent_1
     21300004: roguelikeSheet_transparent_2
     21300006: roguelikeSheet_transparent_3
@@ -1774,7 +1774,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: roguelikeSheet_transparent_0
+      name: Water_Tile_1
       rect:
         serializedVersion: 2
         x: 0

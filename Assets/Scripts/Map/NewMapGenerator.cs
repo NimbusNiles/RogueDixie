@@ -6,6 +6,7 @@ public class NewMapGenerator : MonoBehaviour {
 
     public GameObject floorTile;
     public GameObject floorTile2;
+    public GameObject floorTile3;
     public GameObject wallTile;
 
     public string seed;
@@ -15,6 +16,7 @@ public class NewMapGenerator : MonoBehaviour {
     [Range(0, 100)]
     public int randomFillPercent;
     public int borderSize;
+    public int erosionSize;
     
     private int[,] map;
     private int[,] tempMap;
@@ -73,6 +75,8 @@ public class NewMapGenerator : MonoBehaviour {
             tempMap = new int[width, height];
             SmoothMap();                                                                        //Map array's values are smoothed to nearest neighbours
         }
+
+        ErodeMap();
     }
 
     void RandomFillMap() {
@@ -119,6 +123,26 @@ public class NewMapGenerator : MonoBehaviour {
 
     }
 
+    void ErodeMap() {
+        for (int x = 0; x < width; x++) {
+            for (int y = 0; y < height; y++) {
+                if(map[x, y] == 1) {
+                    for (int neighbourX = x - erosionSize; neighbourX <= x + erosionSize; neighbourX++) {
+                        for (int neighbourY = y - erosionSize; neighbourY <= y + erosionSize; neighbourY++) {
+                            if (neighbourX != x || neighbourY != y) {
+                                if (neighbourX >= 0 && neighbourX < width && neighbourY >= 0 && neighbourY < height) {
+                                    if (map[neighbourX, neighbourY] == 0) {
+                                        map[x, y] = 2;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
     int GetSurroundingWallCount(int gridX, int gridY) {
         int wallCount = 0;
         for (int neighbourX = gridX - 1; neighbourX <= gridX + 1; neighbourX++) {
@@ -152,7 +176,7 @@ public class NewMapGenerator : MonoBehaviour {
         } else if(tileIndex == 1) {
             tileObject = floorTile2;
         }else if (tileIndex == 2) {
-            tileObject = wallTile;
+            tileObject = floorTile3;
         }
         GameObject tile = Instantiate(tileObject, tilePosition, Quaternion.identity) as GameObject;
         tile.transform.parent = mapTiles.transform;
