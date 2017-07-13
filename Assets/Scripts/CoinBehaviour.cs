@@ -16,7 +16,7 @@ public class CoinBehaviour : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Player") {
+        if (collision.gameObject.CompareTag("Player")) {
             PlayerLoot.coinAmount += value;
             Debug.Log(PlayerLoot.coinAmount);
             gameObject.SetActive(false);
